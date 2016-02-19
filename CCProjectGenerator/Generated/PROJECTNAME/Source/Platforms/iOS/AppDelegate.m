@@ -26,40 +26,83 @@
 #import "cocos2d.h"
 
 #import "AppDelegate.h"
+#if CC_CCBREADER
 #import "CCBuilderReader.h"
+#endif
+#import "MainScene.h"
+
 
 @implementation AppController
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSMutableDictionary* cocos2dSetup;
+#if CC_CCBREADER
     // Configure Cocos2d with the options set in SpriteBuilder
     NSString* configPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Published-iOS"]; // TODO: add support for Published-Android support
     configPath = [configPath stringByAppendingPathComponent:@"configCocos2d.plist"];
     
-    NSMutableDictionary* cocos2dSetup = [NSMutableDictionary dictionaryWithContentsOfFile:configPath];
-    
-    // Note: this needs to happen before configureCCFileUtils is called, because we need apportable to correctly setup the screen scale factor.
-#ifdef APPORTABLE
-    if([cocos2dSetup[CCSetupScreenMode] isEqual:CCScreenModeFixed])
-        [UIScreen mainScreen].currentMode = [UIScreenMode emulatedMode:UIScreenAspectFitEmulationMode];
-    else
-        [UIScreen mainScreen].currentMode = [UIScreenMode emulatedMode:UIScreenScaledAspectFitEmulationMode];
-#endif
+    cocos2dSetup = [NSMutableDictionary dictionaryWithContentsOfFile:configPath];
     
     // Configure CCFileUtils to work with SpriteBuilder
     [CCBReader configureCCFileUtils];
+#else
+    // Cocos2D takes a dictionary to start ... yeah I know ... but it does, and it is kind of neat
+    cocos2dSetup = [NSMutableDictionary dictionary];
     
-    // Do any extra configuration of Cocos2d here (the example line changes the pixel format for faster rendering, but with less colors)
-    //[cocos2dSetup setObject:kEAGLColorFormatRGB565 forKey:CCConfigPixelFormat];
+    // Let's add some setup stuff
     
+    // File extensions
+    // You can use anything you want, and completely dropping extensions will in most cases automatically scale the artwork correct
+    // To make it easy to understand what resolutions I am using, I have changed this for this demo to -4x -2x and -1x
+    // Notice that I deliberately added some of the artwork without extensions
+    [CCFileUtils sharedFileUtils].suffixesDict = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
+                                                  @"-2x", CCFileUtilsSuffixiPad,
+                                                  @"-4x", CCFileUtilsSuffixiPadHD,
+                                                  @"-1x", CCFileUtilsSuffixiPhone,
+                                                  @"-1x", CCFileUtilsSuffixiPhoneHD,
+                                                  @"-1x", CCFileUtilsSuffixiPhone5,
+                                                  @"-2x", CCFileUtilsSuffixiPhone5HD,
+                                                  @"", CCFileUtilsSuffixDefault,
+                                                  nil];
+    
+    // Show FPS
+    // We really want this when developing an app
+    [cocos2dSetup setObject:@(YES) forKey:CCSetupShowDebugStats];
+    
+    // A acouple of other examples
+    
+    // Use a 16 bit color buffer
+    // This will lower the color depth from 32 bits to 16 bits for that extra performance
+    // Most will want 32, so we disbaled it
+    // ---
+    // [startUpOptions setObject:kEAGLColorFormatRGB565 forKey:CCSetupPixelFormat];
+    
+    // Use a simplified coordinate system that is shared across devices
+    // Normally you work in the coordinate of the device (an iPad is 1024x768, an iPhone 4 480x320 and so on)
+    // This feature makes it easier to use the same setup for all devices (easier is a relative term)
+    // Most will want to handle iPad and iPhone exclusively, so it is disabled by default
+    // ---
+    // [startUpOptions setObject:CCScreenModeFixed forKey:CCSetupScreenMode];
+    
+    // All the supported keys can be found in CCConfiguration.h
+#endif
+    // We are done ...
+    // Lets get this thing on the road!
     [self setupCocos2dWithOptions:cocos2dSetup];
     
+    CCDirectorIOS* director = (CCDirectorIOS*)[CCDirector sharedDirector];
+    
+    // Creat a scene
+    CCScene* main = [MainScene new];
+    
+    // Run the director with the scene.
+    // Push as much scenes as you want (maybe useful for 3D touch)
+    [director runWithScene:main];
+    
+    // Stay positive. Always return a YES :)
     return YES;
-}
 
-- (CCScene*) startScene
-{
-    return [CCBReader loadAsScene:@"MainScene"];
 }
 
 @end

@@ -46,7 +46,7 @@ class ViewController: NSViewController {
                     
                     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0), dispatch_get_main_queue(), { () -> Void in
                         
-                        CCBProjectCreator.createDefaultProjectAtPath(fileName, programmingLanguage: .Swift)
+                        CCBProjectCreator.createDefaultProjectAtPath(fileName, programmingLanguage: .ObjectiveC)
                         
                     })
                     
