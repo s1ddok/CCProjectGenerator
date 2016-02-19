@@ -50,8 +50,6 @@ class ViewController: NSViewController {
                         
                     })
                     
-                    
-                    
                 }
             }
             
