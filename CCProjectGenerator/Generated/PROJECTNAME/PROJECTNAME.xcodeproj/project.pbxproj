@@ -40,9 +40,7 @@
 		0874685A1C77B1350070B58C /* CCResponderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467991C77B1350070B58C /* CCResponderManager.m */; };
 		0874685B1C77B1350070B58C /* CCResponderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467991C77B1350070B58C /* CCResponderManager.m */; };
 		0874685C1C77B1350070B58C /* CCTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0874679B1C77B1350070B58C /* CCTouch.m */; };
-		0874685D1C77B1350070B58C /* CCTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0874679B1C77B1350070B58C /* CCTouch.m */; };
 		0874685E1C77B1350070B58C /* CCTouchEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0874679D1C77B1350070B58C /* CCTouchEvent.m */; };
-		0874685F1C77B1350070B58C /* CCTouchEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0874679D1C77B1350070B58C /* CCTouchEvent.m */; };
 		087468601C77B1350070B58C /* CCScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467A01C77B1350070B58C /* CCScene.m */; };
 		087468611C77B1350070B58C /* CCScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467A01C77B1350070B58C /* CCScene.m */; };
 		087468621C77B1350070B58C /* CCTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467A21C77B1350070B58C /* CCTransition.m */; };
@@ -135,7 +133,6 @@
 		087468C61C77B1350070B58C /* CCPlatformTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 087468231C77B1350070B58C /* CCPlatformTextField.m */; };
 		087468C71C77B1350070B58C /* CCPlatformTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 087468231C77B1350070B58C /* CCPlatformTextField.m */; };
 		087468C81C77B1350070B58C /* CCPlatformTextFieldIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 087468251C77B1350070B58C /* CCPlatformTextFieldIOS.m */; };
-		087468C91C77B1350070B58C /* CCPlatformTextFieldIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 087468251C77B1350070B58C /* CCPlatformTextFieldIOS.m */; };
 		087468CA1C77B1350070B58C /* CCPlatformTextFieldMac.m in Sources */ = {isa = PBXBuildFile; fileRef = 087468281C77B1350070B58C /* CCPlatformTextFieldMac.m */; };
 		087468CB1C77B1350070B58C /* CCPlatformTextFieldMac.m in Sources */ = {isa = PBXBuildFile; fileRef = 087468281C77B1350070B58C /* CCPlatformTextFieldMac.m */; };
 		087468CC1C77B1350070B58C /* CCControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0874682E1C77B1350070B58C /* CCControl.m */; };
@@ -1282,7 +1279,6 @@
 				0874688F1C77B1350070B58C /* NSThread+performBlock.m in Sources */,
 				0874684B1C77B1350070B58C /* CCAnimation.m in Sources */,
 				087468CB1C77B1350070B58C /* CCPlatformTextFieldMac.m in Sources */,
-				0874685D1C77B1350070B58C /* CCTouch.m in Sources */,
 				087468931C77B1350070B58C /* CCColor.m in Sources */,
 				087468831C77B1350070B58C /* CGPointExtension.m in Sources */,
 				087468611C77B1350070B58C /* CCScene.m in Sources */,
@@ -1317,7 +1313,6 @@
 				087468571C77B1350070B58C /* CCSpriteFrameCache.m in Sources */,
 				087468CF1C77B1350070B58C /* CCButton.m in Sources */,
 				087468651C77B1350070B58C /* CCNodeColor.m in Sources */,
-				0874685F1C77B1350070B58C /* CCTouchEvent.m in Sources */,
 				087468991C77B1350070B58C /* CCRenderDispatch.m in Sources */,
 				0874686B1C77B1350070B58C /* CCActionManager.m in Sources */,
 				087468E01C77B2040070B58C /* CCGLView.m in Sources */,
@@ -1347,7 +1342,6 @@
 				087468D91C77B1350070B58C /* CCSlider.m in Sources */,
 				7A40360419DDEE84007B6E8F /* main.m in Sources */,
 				087468431C77B1350070B58C /* CCLayoutBox.m in Sources */,
-				087468C91C77B1350070B58C /* CCPlatformTextFieldIOS.m in Sources */,
 				7A59498E19E3941300F65F90 /* AppDelegate.m in Sources */,
 				0874683D1C77B1350070B58C /* CCNode.m in Sources */,
 			);

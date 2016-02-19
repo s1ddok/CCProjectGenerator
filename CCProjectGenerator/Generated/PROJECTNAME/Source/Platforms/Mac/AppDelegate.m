@@ -32,18 +32,20 @@
 
     // Center main window
     [self.window center];
-
+#if CC_CCBREADER
     // Configure CCFileUtils to work with SpriteBuilder
     [CCBReader configureCCFileUtils];
     
     [[CCPackageManager sharedManager] loadPackages];
 
     [director runWithScene:[CCBReader loadAsScene:@"MainScene"]];
+#endif
 }
-
+#if CC_CCBREADER
 - (void)applicationWillTerminate:(NSNotification *)aNotification
 {
     [[CCPackageManager sharedManager] savePackages];
 }
+#endif
 
 @end
