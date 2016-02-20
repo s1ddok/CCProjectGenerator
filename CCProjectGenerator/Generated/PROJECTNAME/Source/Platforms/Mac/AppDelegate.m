@@ -12,10 +12,8 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     CCDirectorMac *director = (CCDirectorMac*) [CCDirector sharedDirector];
-    
-    NSMutableDictionary* cocos2dSetup;
     // enable FPS and SPF
-    // [director setDisplayStats:YES];
+    [director setDisplayStats:YES];
 
     // Set a default window size
     CGSize defaultWindowSize = CGSizeMake(480.0f, 320.0f);
