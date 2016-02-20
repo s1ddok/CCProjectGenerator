@@ -160,6 +160,8 @@
 		087468E21C77B2040070B58C /* CCMetalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 087468031C77B1350070B58C /* CCMetalSupport.m */; };
 		08BA201C1C785C6500263AF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08BA201B1C785C6500263AF8 /* Images.xcassets */; };
 		08BA201E1C785CA100263AF8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08BA201D1C785CA100263AF8 /* Launch Screen.storyboard */; };
+		08BA20211C785F1C00263AF8 /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B121015197483EE004C1E1D /* ic_launcher.png */; };
+		08BA20221C785F1D00263AF8 /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B121015197483EE004C1E1D /* ic_launcher.png */; };
 		5B121038197487F2004C1E1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
 		7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A046D7519E84C36004C4763 /* MainScene.swift */; };
 		7A046D8C19E8A20E004C4763 /* MainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B7378993180767190076A88C /* MainScene.m */; };
@@ -378,10 +380,7 @@
 		08BA201D1C785CA100263AF8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
 		5B12100B19748281004C1E1D /* BridgeKitV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BridgeKitV3.framework; path = System/Library/Frameworks/BridgeKitV3.framework; sourceTree = SDKROOT; };
-		5B12100F197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
-		5B121011197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
-		5B121013197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
-		5B121015197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
+		5B121015197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_launcher.png; path = "res/drawable-xxhdpi/ic_launcher.png"; sourceTree = "<group>"; };
 		5B121034197485FE004C1E1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Platforms/iOS/Info.plist; sourceTree = "<group>"; };
 		7A046D7519E84C36004C4763 /* MainScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainScene.swift; path = Source/MainScene.swift; sourceTree = "<group>"; };
 		7A4035FF19DDEE84007B6E8F /* PROJECTNAME Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PROJECTNAME Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -835,49 +834,6 @@
 			path = Source/libs;
 			sourceTree = "<group>";
 		};
-		5B12100D197483EE004C1E1D /* res */ = {
-			isa = PBXGroup;
-			children = (
-				5B12100E197483EE004C1E1D /* drawable-hdpi */,
-				5B121010197483EE004C1E1D /* drawable-mdpi */,
-				5B121012197483EE004C1E1D /* drawable-xhdpi */,
-				5B121014197483EE004C1E1D /* drawable-xxhdpi */,
-			);
-			path = res;
-			sourceTree = "<group>";
-		};
-		5B12100E197483EE004C1E1D /* drawable-hdpi */ = {
-			isa = PBXGroup;
-			children = (
-				5B12100F197483EE004C1E1D /* ic_launcher.png */,
-			);
-			path = "drawable-hdpi";
-			sourceTree = "<group>";
-		};
-		5B121010197483EE004C1E1D /* drawable-mdpi */ = {
-			isa = PBXGroup;
-			children = (
-				5B121011197483EE004C1E1D /* ic_launcher.png */,
-			);
-			path = "drawable-mdpi";
-			sourceTree = "<group>";
-		};
-		5B121012197483EE004C1E1D /* drawable-xhdpi */ = {
-			isa = PBXGroup;
-			children = (
-				5B121013197483EE004C1E1D /* ic_launcher.png */,
-			);
-			path = "drawable-xhdpi";
-			sourceTree = "<group>";
-		};
-		5B121014197483EE004C1E1D /* drawable-xxhdpi */ = {
-			isa = PBXGroup;
-			children = (
-				5B121015197483EE004C1E1D /* ic_launcher.png */,
-			);
-			path = "drawable-xxhdpi";
-			sourceTree = "<group>";
-		};
 		7A40362019DDEF0D007B6E8F /* Platforms */ = {
 			isa = PBXGroup;
 			children = (
@@ -1027,7 +983,7 @@
 				08BA201D1C785CA100263AF8 /* Launch Screen.storyboard */,
 				08BA201B1C785C6500263AF8 /* Images.xcassets */,
 				7A40366119DDF8C2007B6E8F /* Platforms */,
-				5B12100D197483EE004C1E1D /* res */,
+				5B121015197483EE004C1E1D /* ic_launcher.png */,
 				B737893A180761570076A88C /* Published-iOS */,
 			);
 			name = Resources;
@@ -1130,6 +1086,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A59498B19E38E4A00F65F90 /* MainMenu.xib in Resources */,
+				08BA20221C785F1D00263AF8 /* ic_launcher.png in Resources */,
 				7A4036F619DE3FFC007B6E8F /* Published-iOS in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1141,6 +1098,7 @@
 				08BA201E1C785CA100263AF8 /* Launch Screen.storyboard in Resources */,
 				08BA201C1C785C6500263AF8 /* Images.xcassets in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,
+				08BA20211C785F1C00263AF8 /* ic_launcher.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

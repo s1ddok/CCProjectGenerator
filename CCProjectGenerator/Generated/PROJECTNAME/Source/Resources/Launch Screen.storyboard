@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_launcher.png" translatesAutoresizingMaskIntoConstraints="NO" id="n4s-SE-XS3">
-                                <rect key="frame" x="264" y="264" width="72" height="72"/>
+                                <rect key="frame" x="228" y="228" width="144" height="144"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -34,6 +34,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic_launcher.png" width="72" height="72"/>
+        <image name="ic_launcher.png" width="144" height="144"/>
     </resources>
 </document>
