@@ -101,7 +101,7 @@
     // Update workspace data
     [self setName:projName inFile:[xcodeFileName stringByAppendingPathComponent:@"project.xcworkspace/contents.xcworkspacedata"] search:substitutableProjectName];
     
-    NSArray *platforms = @[@"iOS", @"Mac"];
+    NSArray *platforms = @[@"iOS", @"Mac", @"tvOS"];
     
     for (id platform in platforms) {
         // Update scheme
