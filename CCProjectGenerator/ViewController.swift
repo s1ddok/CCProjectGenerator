@@ -12,11 +12,16 @@ import Foundation
 class ViewController: NSViewController {
 
     @IBOutlet weak var createButton: NSButton!
+    @IBOutlet weak var langSelector: NSPopUpButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        // Set fancy black background color
+        let viewLayer = CALayer()
+        viewLayer.backgroundColor = CGColorCreateGenericRGB(0.0, 0.0, 0.0, 1.0)
+        view.wantsLayer = true
+        view.layer = viewLayer
     }
 
     override var representedObject: AnyObject? {
@@ -46,7 +51,8 @@ class ViewController: NSViewController {
                     
                     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0), dispatch_get_main_queue(), { () -> Void in
                         
-                        CCBProjectCreator.createDefaultProjectAtPath(fileName, programmingLanguage: .ObjectiveC)
+                        let lang = CCBProgrammingLanguage(rawValue: Int8(self.langSelector.selectedItem!.tag))
+                        CCBProjectCreator.createDefaultProjectAtPath(fileName, programmingLanguage:lang!)
                         
                     })
                     

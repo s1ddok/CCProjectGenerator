@@ -10,8 +10,8 @@
 
 typedef NS_ENUM(int8_t, CCBProgrammingLanguage)
 {
-    CCBProgrammingLanguageObjectiveC = 0,
-    CCBProgrammingLanguageSwift = 1,
+    CCBProgrammingLanguageObjectiveC = 1,
+    CCBProgrammingLanguageSwift = 2,
 };
 
 
