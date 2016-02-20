@@ -12,3 +12,4 @@ TODO:
 *Add extension injection support
 *Add Chipmunk injection support
 *Add ObjectAL injection support
+*Add cocos2d update feature
