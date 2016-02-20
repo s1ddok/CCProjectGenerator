@@ -9,7 +9,7 @@ Some of project-generation code was extracted from SpriteBuilder repo.
 (https://i.gyazo.com/e674f6bdc34b23fe3ee18091cc4227f6.png)
 
 TODO:
-*Add extension injection support
-*Add Chipmunk injection support
-*Add ObjectAL injection support
-*Add cocos2d update feature
+ - Add extension injection support
+ - Add Chipmunk injection support
+ - Add ObjectAL injection support
+ - Add cocos2d update feature
