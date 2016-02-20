@@ -158,7 +158,6 @@
 		087468E01C77B2040070B58C /* CCGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467FD1C77B1350070B58C /* CCGLView.m */; };
 		087468E11C77B2040070B58C /* CCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467FF1C77B1350070B58C /* CCAppDelegate.m */; };
 		087468E21C77B2040070B58C /* CCMetalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 087468031C77B1350070B58C /* CCMetalSupport.m */; };
-		08BA201C1C785C6500263AF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08BA201B1C785C6500263AF8 /* Images.xcassets */; };
 		08BA201E1C785CA100263AF8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08BA201D1C785CA100263AF8 /* Launch Screen.storyboard */; };
 		08BA20211C785F1C00263AF8 /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B121015197483EE004C1E1D /* ic_launcher.png */; };
 		08BA20221C785F1D00263AF8 /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B121015197483EE004C1E1D /* ic_launcher.png */; };
@@ -253,9 +252,11 @@
 		08BA207F1C7860D600263AF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3D17B978D7009739AE /* Foundation.framework */; };
 		08BA20801C7860D600263AF8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3F17B978D7009739AE /* CoreGraphics.framework */; };
 		08BA20811C7860D600263AF8 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B4117B978D7009739AE /* CoreText.framework */; };
-		08BA20851C7860D600263AF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08BA201B1C785C6500263AF8 /* Images.xcassets */; };
 		08BA20861C7860D600263AF8 /* Published-iOS in Resources */ = {isa = PBXBuildFile; fileRef = B737893A180761570076A88C /* Published-iOS */; };
 		08BA20871C7860D600263AF8 /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B121015197483EE004C1E1D /* ic_launcher.png */; };
+		08BA20931C7865E600263AF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08BA20921C7865E600263AF8 /* Images.xcassets */; };
+		08BA20941C7865E600263AF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08BA20921C7865E600263AF8 /* Images.xcassets */; };
+		08BA20951C7865E600263AF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08BA20921C7865E600263AF8 /* Images.xcassets */; };
 		5B121038197487F2004C1E1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
 		7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A046D7519E84C36004C4763 /* MainScene.swift */; };
 		7A046D8C19E8A20E004C4763 /* MainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B7378993180767190076A88C /* MainScene.m */; };
@@ -470,10 +471,10 @@
 		0874683A1C77B1350070B58C /* CCSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCSlider.m; path = "cocos2d-ui/CCSlider.m"; sourceTree = "<group>"; };
 		08746BBB1C77B5F60070B58C /* CCDirectorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCDirectorView.h; sourceTree = "<group>"; };
 		08746BBC1C77B5F60070B58C /* CCRenderDispatch_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCRenderDispatch_Private.h; sourceTree = "<group>"; };
-		08BA201B1C785C6500263AF8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "PROJECTNAME iOS/Images.xcassets"; sourceTree = SOURCE_ROOT; };
 		08BA201D1C785CA100263AF8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		08BA208B1C7860D600263AF8 /* PROJECTNAME tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PROJECTNAME tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		08BA208C1C7860D600263AF8 /* PROJECTNAME iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PROJECTNAME iOS copy-Info.plist"; path = "/Users/s1ddok/Documents/Projects/GitHub/CCProjectGenerator/CCProjectGenerator/Generated/PROJECTNAME/PROJECTNAME iOS copy-Info.plist"; sourceTree = "<absolute>"; };
+		08BA20911C78657200263AF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Resources/Platforms/tvOS/Info.plist; sourceTree = "<group>"; };
+		08BA20921C7865E600263AF8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
 		5B12100B19748281004C1E1D /* BridgeKitV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BridgeKitV3.framework; path = System/Library/Frameworks/BridgeKitV3.framework; sourceTree = SDKROOT; };
 		5B121015197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_launcher.png; path = "res/drawable-xxhdpi/ic_launcher.png"; sourceTree = "<group>"; };
@@ -947,6 +948,15 @@
 			path = Source/libs;
 			sourceTree = "<group>";
 		};
+		08BA208F1C78645D00263AF8 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				08BA20911C78657200263AF8 /* Info.plist */,
+			);
+			name = tvOS;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		7A40362019DDEF0D007B6E8F /* Platforms */ = {
 			isa = PBXGroup;
 			children = (
@@ -993,6 +1003,7 @@
 		7A40366119DDF8C2007B6E8F /* Platforms */ = {
 			isa = PBXGroup;
 			children = (
+				08BA208F1C78645D00263AF8 /* tvOS */,
 				7A40366219DDF8CB007B6E8F /* iOS */,
 				7A40366419DDF8DB007B6E8F /* Mac */,
 			);
@@ -1055,7 +1066,6 @@
 				B77F1CCF17B978D8009739AE /* Supporting Files */,
 				B77F1B3017B978D7009739AE /* Frameworks */,
 				B77F1B2F17B978D7009739AE /* Products */,
-				08BA208C1C7860D600263AF8 /* PROJECTNAME iOS copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1095,8 +1105,8 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				08BA20921C7865E600263AF8 /* Images.xcassets */,
 				08BA201D1C785CA100263AF8 /* Launch Screen.storyboard */,
-				08BA201B1C785C6500263AF8 /* Images.xcassets */,
 				7A40366119DDF8C2007B6E8F /* Platforms */,
 				5B121015197483EE004C1E1D /* ic_launcher.png */,
 				B737893A180761570076A88C /* Published-iOS */,
@@ -1220,7 +1230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08BA20851C7860D600263AF8 /* Images.xcassets in Resources */,
+				08BA20951C7865E600263AF8 /* Images.xcassets in Resources */,
 				08BA20861C7860D600263AF8 /* Published-iOS in Resources */,
 				08BA20871C7860D600263AF8 /* ic_launcher.png in Resources */,
 			);
@@ -1231,6 +1241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A59498B19E38E4A00F65F90 /* MainMenu.xib in Resources */,
+				08BA20941C7865E600263AF8 /* Images.xcassets in Resources */,
 				08BA20221C785F1D00263AF8 /* ic_launcher.png in Resources */,
 				7A4036F619DE3FFC007B6E8F /* Published-iOS in Resources */,
 			);
@@ -1241,7 +1252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08BA201E1C785CA100263AF8 /* Launch Screen.storyboard in Resources */,
-				08BA201C1C785C6500263AF8 /* Images.xcassets in Resources */,
+				08BA20931C7865E600263AF8 /* Images.xcassets in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,
 				08BA20211C785F1C00263AF8 /* ic_launcher.png in Resources */,
 			);
@@ -1593,7 +1604,7 @@
 					"\"Source/libs/cocos2d-iphone/cocos2d-ui\"/**",
 					"\"Source/libs/cocos2d-iphone/external/ObjectAL\"/**",
 				);
-				INFOPLIST_FILE = "PROJECTNAME iOS copy-Info.plist";
+				INFOPLIST_FILE = Source/Resources/Platforms/tvOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
@@ -1630,7 +1641,7 @@
 					"\"Source/libs/cocos2d-iphone/cocos2d-ui\"/**",
 					"\"Source/libs/cocos2d-iphone/external/ObjectAL\"/**",
 				);
-				INFOPLIST_FILE = "PROJECTNAME iOS copy-Info.plist";
+				INFOPLIST_FILE = Source/Resources/Platforms/tvOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
