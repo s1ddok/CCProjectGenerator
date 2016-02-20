@@ -691,12 +691,12 @@
                             </imageView>
                             <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Wfo-KH-qIu">
                                 <rect key="frame" x="240" y="150" width="110" height="26"/>
-                                <popUpButtonCell key="cell" type="push" title="Swift" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="2" imageScaling="proportionallyDown" inset="2" selectedItem="mEd-QJ-hbd" id="XZi-JP-amA">
+                                <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="XZi-JP-amA">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="menu"/>
                                     <menu key="menu" id="GTa-hi-Y8w">
                                         <items>
-                                            <menuItem title="Swift" state="on" tag="2" id="mEd-QJ-hbd"/>
+                                            <menuItem title="Swift" tag="2" id="mEd-QJ-hbd"/>
                                             <menuItem title="Objective-C" tag="1" id="FIg-9q-rPd"/>
                                         </items>
                                     </menu>
