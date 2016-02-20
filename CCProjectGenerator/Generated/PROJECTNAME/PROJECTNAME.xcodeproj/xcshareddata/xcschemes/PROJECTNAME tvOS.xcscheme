@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0610"
+   LastUpgradeVersion = "0720"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7A4035FE19DDEE84007B6E8F"
-               BuildableName = "PROJECTNAME Mac.app"
-               BlueprintName = "PROJECTNAME Mac"
+               BlueprintIdentifier = "08BA20231C7860D600263AF8"
+               BuildableName = "PROJECTNAME tvOS.app"
+               BlueprintName = "PROJECTNAME tvOS"
                ReferencedContainer = "container:PROJECTNAME.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7A4035FE19DDEE84007B6E8F"
-            BuildableName = "PROJECTNAME Mac.app"
-            BlueprintName = "PROJECTNAME Mac"
+            BlueprintIdentifier = "08BA20231C7860D600263AF8"
+            BuildableName = "PROJECTNAME tvOS.app"
+            BlueprintName = "PROJECTNAME tvOS"
             ReferencedContainer = "container:PROJECTNAME.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -55,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7A4035FE19DDEE84007B6E8F"
-            BuildableName = "PROJECTNAME Mac.app"
-            BlueprintName = "PROJECTNAME Mac"
+            BlueprintIdentifier = "08BA20231C7860D600263AF8"
+            BuildableName = "PROJECTNAME tvOS.app"
+            BlueprintName = "PROJECTNAME tvOS"
             ReferencedContainer = "container:PROJECTNAME.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -74,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7A4035FE19DDEE84007B6E8F"
-            BuildableName = "PROJECTNAME Mac.app"
-            BlueprintName = "PROJECTNAME Mac"
+            BlueprintIdentifier = "08BA20231C7860D600263AF8"
+            BuildableName = "PROJECTNAME tvOS.app"
+            BlueprintName = "PROJECTNAME tvOS"
             ReferencedContainer = "container:PROJECTNAME.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

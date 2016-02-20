@@ -162,6 +162,100 @@
 		08BA201E1C785CA100263AF8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08BA201D1C785CA100263AF8 /* Launch Screen.storyboard */; };
 		08BA20211C785F1C00263AF8 /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B121015197483EE004C1E1D /* ic_launcher.png */; };
 		08BA20221C785F1D00263AF8 /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B121015197483EE004C1E1D /* ic_launcher.png */; };
+		08BA20261C7860D600263AF8 /* CCTexturePVR.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467C01C77B1350070B58C /* CCTexturePVR.m */; };
+		08BA20271C7860D600263AF8 /* CCCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467E31C77B1350070B58C /* CCCache.m */; };
+		08BA20281C7860D600263AF8 /* CCShader.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467EE1C77B1350070B58C /* CCShader.m */; };
+		08BA20291C7860D600263AF8 /* CCLabelBMFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467811C77B1350070B58C /* CCLabelBMFont.m */; };
+		08BA202A1C7860D600263AF8 /* CCLabelTTF.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467831C77B1350070B58C /* CCLabelTTF.m */; };
+		08BA202B1C7860D600263AF8 /* ccUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 087467D41C77B1350070B58C /* ccUtils.c */; };
+		08BA202C1C7860D600263AF8 /* CCActionInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467B51C77B1350070B58C /* CCActionInterval.m */; };
+		08BA202D1C7860D600263AF8 /* ZipUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467DB1C77B1350070B58C /* ZipUtils.m */; };
+		08BA202E1C7860D600263AF8 /* NSThread+performBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467DD1C77B1350070B58C /* NSThread+performBlock.m */; };
+		08BA202F1C7860D600263AF8 /* CCAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467871C77B1350070B58C /* CCAnimation.m */; };
+		08BA20301C7860D600263AF8 /* CCPlatformTextFieldMac.m in Sources */ = {isa = PBXBuildFile; fileRef = 087468281C77B1350070B58C /* CCPlatformTextFieldMac.m */; };
+		08BA20311C7860D600263AF8 /* CCTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0874679B1C77B1350070B58C /* CCTouch.m */; };
+		08BA20321C7860D600263AF8 /* CCColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467E11C77B1350070B58C /* CCColor.m */; };
+		08BA20331C7860D600263AF8 /* CGPointExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467CE1C77B1350070B58C /* CGPointExtension.m */; };
+		08BA20341C7860D600263AF8 /* CCScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467A01C77B1350070B58C /* CCScene.m */; };
+		08BA20351C7860D600263AF8 /* CCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 087468381C77B1350070B58C /* CCTextField.m */; };
+		08BA20361C7860D600263AF8 /* CCFileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467D71C77B1350070B58C /* CCFileUtils.m */; };
+		08BA20371C7860D600263AF8 /* CCDirectorMac.m in Sources */ = {isa = PBXBuildFile; fileRef = 087468081C77B1350070B58C /* CCDirectorMac.m */; };
+		08BA20381C7860D600263AF8 /* CCRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467F31C77B1350070B58C /* CCRenderer.m */; };
+		08BA20391C7860D600263AF8 /* NSValue+CCRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467F01C77B1350070B58C /* NSValue+CCRenderer.m */; };
+		08BA203A1C7860D600263AF8 /* NSAttributedString+CCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467DF1C77B1350070B58C /* NSAttributedString+CCAdditions.m */; };
+		08BA203B1C7860D600263AF8 /* CCScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0874681E1C77B1350070B58C /* CCScheduler.m */; };
+		08BA203C1C7860D600263AF8 /* CCSpriteBatchNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0874678F1C77B1350070B58C /* CCSpriteBatchNode.m */; };
+		08BA203D1C7860D600263AF8 /* CCDirectorIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467FB1C77B1350070B58C /* CCDirectorIOS.m */; };
+		08BA203E1C7860D600263AF8 /* CCScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 087468341C77B1350070B58C /* CCScrollView.m */; };
+		08BA203F1C7860D600263AF8 /* CCGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0874680A1C77B1350070B58C /* CCGLView.m */; };
+		08BA20401C7860D600263AF8 /* CCProgressNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467A71C77B1350070B58C /* CCProgressNode.m */; };
+		08BA20411C7860D600263AF8 /* TGAlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467CA1C77B1350070B58C /* TGAlib.m */; };
+		08BA20421C7860D600263AF8 /* CCRenderTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467A91C77B1350070B58C /* CCRenderTexture.m */; };
+		08BA20431C7860D600263AF8 /* CCAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467B11C77B1350070B58C /* CCAction.m */; };
+		08BA20441C7860D600263AF8 /* CCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467FF1C77B1350070B58C /* CCAppDelegate.m */; };
+		08BA20451C7860D600263AF8 /* CCControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0874682E1C77B1350070B58C /* CCControl.m */; };
+		08BA20461C7860D600263AF8 /* CCMetalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 087468031C77B1350070B58C /* CCMetalSupport.m */; };
+		08BA20471C7860D600263AF8 /* CCControlTextureFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 087468361C77B1350070B58C /* CCControlTextureFactory.m */; };
+		08BA20481C7860D600263AF8 /* CCGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467FD1C77B1350070B58C /* CCGLView.m */; };
+		08BA20491C7860D600263AF8 /* CCLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467791C77B1350070B58C /* CCLayout.m */; };
+		08BA204A1C7860D600263AF8 /* CCDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = 087468171C77B1350070B58C /* CCDirector.m */; };
+		08BA204B1C7860D600263AF8 /* CCActionEase.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467B71C77B1350070B58C /* CCActionEase.m */; };
+		08BA204C1C7860D600263AF8 /* CCTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 087468321C77B1350070B58C /* CCTableView.m */; };
+		08BA204D1C7860D600263AF8 /* ccFPSImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 087468141C77B1350070B58C /* ccFPSImages.m */; };
+		08BA204E1C7860D600263AF8 /* CCActionProgressTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467BB1C77B1350070B58C /* CCActionProgressTimer.m */; };
+		08BA204F1C7860D600263AF8 /* CCDrawNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0874677E1C77B1350070B58C /* CCDrawNode.m */; };
+		08BA20501C7860D600263AF8 /* CCResponderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467991C77B1350070B58C /* CCResponderManager.m */; };
+		08BA20511C7860D600263AF8 /* CCSpriteFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467911C77B1350070B58C /* CCSpriteFrame.m */; };
+		08BA20521C7860D600263AF8 /* CCTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467C21C77B1350070B58C /* CCTexture.m */; };
+		08BA20531C7860D600263AF8 /* CCSpriteFrameCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467931C77B1350070B58C /* CCSpriteFrameCache.m */; };
+		08BA20541C7860D600263AF8 /* CCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 087468301C77B1350070B58C /* CCButton.m */; };
+		08BA20551C7860D600263AF8 /* CCNodeColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467A51C77B1350070B58C /* CCNodeColor.m */; };
+		08BA20561C7860D600263AF8 /* CCTouchEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0874679D1C77B1350070B58C /* CCTouchEvent.m */; };
+		08BA20571C7860D600263AF8 /* CCRenderDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467E71C77B1350070B58C /* CCRenderDispatch.m */; };
+		08BA20581C7860D600263AF8 /* CCActionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467AF1C77B1350070B58C /* CCActionManager.m */; };
+		08BA20591C7860D600263AF8 /* CCTextureCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467C51C77B1350070B58C /* CCTextureCache.m */; };
+		08BA205A1C7860D600263AF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B73789851807631A0076A88C /* main.m */; };
+		08BA205B1C7860D600263AF8 /* CCTouchIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 087468011C77B1350070B58C /* CCTouchIOS.m */; };
+		08BA205C1C7860D600263AF8 /* CCMetalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467F71C77B1350070B58C /* CCMetalView.m */; };
+		08BA205D1C7860D600263AF8 /* CCSprite9Slice.m in Sources */ = {isa = PBXBuildFile; fileRef = 0874678D1C77B1350070B58C /* CCSprite9Slice.m */; };
+		08BA205E1C7860D600263AF8 /* CCNode+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467751C77B1350070B58C /* CCNode+Debug.m */; };
+		08BA205F1C7860D600263AF8 /* CCProfiling.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467D21C77B1350070B58C /* CCProfiling.m */; };
+		08BA20601C7860D600263AF8 /* MainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B7378993180767190076A88C /* MainScene.m */; };
+		08BA20611C7860D600263AF8 /* CCActionTween.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467BD1C77B1350070B58C /* CCActionTween.m */; };
+		08BA20621C7860D600263AF8 /* CCResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467971C77B1350070B58C /* CCResponder.m */; };
+		08BA20631C7860D600263AF8 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 087467D91C77B1350070B58C /* base64.c */; };
+		08BA20641C7860D600263AF8 /* CCSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 0874678B1C77B1350070B58C /* CCSprite.m */; };
+		08BA20651C7860D600263AF8 /* CCNoARC.m in Sources */ = {isa = PBXBuildFile; fileRef = 087468201C77B1350070B58C /* CCNoARC.m */; };
+		08BA20661C7860D600263AF8 /* UITouch+CC.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467F91C77B1350070B58C /* UITouch+CC.m */; };
+		08BA20671C7860D600263AF8 /* CCActionInstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467B31C77B1350070B58C /* CCActionInstant.m */; };
+		08BA20681C7860D600263AF8 /* cocos2d.m in Sources */ = {isa = PBXBuildFile; fileRef = 087468121C77B1350070B58C /* cocos2d.m */; };
+		08BA20691C7860D600263AF8 /* CCTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467A21C77B1350070B58C /* CCTransition.m */; };
+		08BA206A1C7860D600263AF8 /* CCWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0874680C1C77B1350070B58C /* CCWindow.m */; };
+		08BA206B1C7860D600263AF8 /* CCRendererGLSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467E51C77B1350070B58C /* CCRendererGLSupport.m */; };
+		08BA206C1C7860D600263AF8 /* CCPlatformTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 087468231C77B1350070B58C /* CCPlatformTextField.m */; };
+		08BA206D1C7860D600263AF8 /* CCRendererBasicTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467EB1C77B1350070B58C /* CCRendererBasicTypes.m */; };
+		08BA206E1C7860D600263AF8 /* CCActionCatmullRom.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467B91C77B1350070B58C /* CCActionCatmullRom.m */; };
+		08BA206F1C7860D600263AF8 /* CCAnimationCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467891C77B1350070B58C /* CCAnimationCache.m */; };
+		08BA20701C7860D600263AF8 /* CCConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 0874681B1C77B1350070B58C /* CCConfiguration.m */; };
+		08BA20711C7860D600263AF8 /* CCSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0874683A1C77B1350070B58C /* CCSlider.m */; };
+		08BA20721C7860D600263AF8 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A046D7519E84C36004C4763 /* MainScene.swift */; };
+		08BA20731C7860D600263AF8 /* CCLayoutBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 0874677B1C77B1350070B58C /* CCLayoutBox.m */; };
+		08BA20741C7860D600263AF8 /* CCPlatformTextFieldIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 087468251C77B1350070B58C /* CCPlatformTextFieldIOS.m */; };
+		08BA20751C7860D600263AF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
+		08BA20761C7860D600263AF8 /* CCNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467731C77B1350070B58C /* CCNode.m */; };
+		08BA20781C7860D600263AF8 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
+		08BA20791C7860D600263AF8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3117B978D7009739AE /* QuartzCore.framework */; };
+		08BA207A1C7860D600263AF8 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3317B978D7009739AE /* OpenGLES.framework */; };
+		08BA207B1C7860D600263AF8 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3517B978D7009739AE /* OpenAL.framework */; };
+		08BA207C1C7860D600263AF8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3717B978D7009739AE /* AudioToolbox.framework */; };
+		08BA207D1C7860D600263AF8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3917B978D7009739AE /* AVFoundation.framework */; };
+		08BA207E1C7860D600263AF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3B17B978D7009739AE /* UIKit.framework */; };
+		08BA207F1C7860D600263AF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3D17B978D7009739AE /* Foundation.framework */; };
+		08BA20801C7860D600263AF8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3F17B978D7009739AE /* CoreGraphics.framework */; };
+		08BA20811C7860D600263AF8 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B4117B978D7009739AE /* CoreText.framework */; };
+		08BA20851C7860D600263AF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08BA201B1C785C6500263AF8 /* Images.xcassets */; };
+		08BA20861C7860D600263AF8 /* Published-iOS in Resources */ = {isa = PBXBuildFile; fileRef = B737893A180761570076A88C /* Published-iOS */; };
+		08BA20871C7860D600263AF8 /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B121015197483EE004C1E1D /* ic_launcher.png */; };
 		5B121038197487F2004C1E1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
 		7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A046D7519E84C36004C4763 /* MainScene.swift */; };
 		7A046D8C19E8A20E004C4763 /* MainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B7378993180767190076A88C /* MainScene.m */; };
@@ -378,6 +472,8 @@
 		08746BBC1C77B5F60070B58C /* CCRenderDispatch_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCRenderDispatch_Private.h; sourceTree = "<group>"; };
 		08BA201B1C785C6500263AF8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "PROJECTNAME iOS/Images.xcassets"; sourceTree = SOURCE_ROOT; };
 		08BA201D1C785CA100263AF8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		08BA208B1C7860D600263AF8 /* PROJECTNAME tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PROJECTNAME tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08BA208C1C7860D600263AF8 /* PROJECTNAME iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PROJECTNAME iOS copy-Info.plist"; path = "/Users/s1ddok/Documents/Projects/GitHub/CCProjectGenerator/CCProjectGenerator/Generated/PROJECTNAME/PROJECTNAME iOS copy-Info.plist"; sourceTree = "<absolute>"; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
 		5B12100B19748281004C1E1D /* BridgeKitV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BridgeKitV3.framework; path = System/Library/Frameworks/BridgeKitV3.framework; sourceTree = SDKROOT; };
 		5B121015197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_launcher.png; path = "res/drawable-xxhdpi/ic_launcher.png"; sourceTree = "<group>"; };
@@ -416,6 +512,23 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		08BA20771C7860D600263AF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08BA20781C7860D600263AF8 /* GLKit.framework in Frameworks */,
+				08BA20791C7860D600263AF8 /* QuartzCore.framework in Frameworks */,
+				08BA207A1C7860D600263AF8 /* OpenGLES.framework in Frameworks */,
+				08BA207B1C7860D600263AF8 /* OpenAL.framework in Frameworks */,
+				08BA207C1C7860D600263AF8 /* AudioToolbox.framework in Frameworks */,
+				08BA207D1C7860D600263AF8 /* AVFoundation.framework in Frameworks */,
+				08BA207E1C7860D600263AF8 /* UIKit.framework in Frameworks */,
+				08BA207F1C7860D600263AF8 /* Foundation.framework in Frameworks */,
+				08BA20801C7860D600263AF8 /* CoreGraphics.framework in Frameworks */,
+				08BA20811C7860D600263AF8 /* CoreText.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7A4035FC19DDEE84007B6E8F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -942,6 +1055,7 @@
 				B77F1CCF17B978D8009739AE /* Supporting Files */,
 				B77F1B3017B978D7009739AE /* Frameworks */,
 				B77F1B2F17B978D7009739AE /* Products */,
+				08BA208C1C7860D600263AF8 /* PROJECTNAME iOS copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -950,6 +1064,7 @@
 			children = (
 				B77F1B2E17B978D7009739AE /* PROJECTNAME.app */,
 				7A4035FF19DDEE84007B6E8F /* PROJECTNAME Mac.app */,
+				08BA208B1C7860D600263AF8 /* PROJECTNAME tvOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1003,6 +1118,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		08BA20231C7860D600263AF8 /* PROJECTNAME tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08BA20881C7860D600263AF8 /* Build configuration list for PBXNativeTarget "PROJECTNAME tvOS" */;
+			buildPhases = (
+				08BA20241C7860D600263AF8 /* Run Script */,
+				08BA20251C7860D600263AF8 /* Sources */,
+				08BA20771C7860D600263AF8 /* Frameworks */,
+				08BA20821C7860D600263AF8 /* Compile Metal Shaders */,
+				08BA20831C7860D600263AF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PROJECTNAME tvOS";
+			productName = Example;
+			productReference = 08BA208B1C7860D600263AF8 /* PROJECTNAME tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 		7A4035FE19DDEE84007B6E8F /* PROJECTNAME Mac */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A40361E19DDEE84007B6E8F /* Build configuration list for PBXNativeTarget "PROJECTNAME Mac" */;
@@ -1076,11 +1210,22 @@
 			targets = (
 				B77F1B2D17B978D7009739AE /* PROJECTNAME iOS */,
 				7A4035FE19DDEE84007B6E8F /* PROJECTNAME Mac */,
+				08BA20231C7860D600263AF8 /* PROJECTNAME tvOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		08BA20831C7860D600263AF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08BA20851C7860D600263AF8 /* Images.xcassets in Resources */,
+				08BA20861C7860D600263AF8 /* Published-iOS in Resources */,
+				08BA20871C7860D600263AF8 /* ic_launcher.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7A4035FD19DDEE84007B6E8F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1105,6 +1250,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		08BA20241C7860D600263AF8 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# osascript -e 'tell application \"System Events\"' -e 'set ProcessList to name of every process' -e 'if \"SpriteBuilder\" is in ProcessList then' -e 'tell application \"SpriteBuilder\" to publish' -e 'end if' -e 'end tell'";
+		};
+		08BA20821C7860D600263AF8 /* Compile Metal Shaders */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Compile Metal Shaders";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /usr/bin/ruby;
+			shellScript = "# Special thanks to Filip Iliescu at Apple for the help with this.\n\n# Environment variables.\nSDK = ENV[\"PLATFORM_NAME\"]\nOBJECT_FILE_DIR = ENV[\"OBJECT_FILE_DIR\"]\nSRCROOT = ENV[\"SRCROOT\"]\nBUILT_PRODUCTS_DIR = ENV[\"BUILT_PRODUCTS_DIR\"]\nPRODUCT_NAME = ENV[\"PRODUCT_NAME\"]\n\n# User variables\n# Directory with your custom .metal files in it.\nSHADER_DIR = \"#{SRCROOT}/Source/MetalShaders\"\n# Location of the cocos2d library directory.\nCOCOS2D_DIR = \"#{SRCROOT}/Source/libs/cocos2d-iphone/cocos2d\"\n\nMETAL_ARGS = [\n\t\"-arch air64\",\n\t\"-emit-llvm\",\n\t\"-c\",\n\t\"-gline-tables-only\",\n\t\"-ffast-math\",\n\t\"-std=ios-metal1.0\",\n    %{-I \"#{COCOS2D_DIR}\"},\n]\n\ndef system(cmd)\n\tputs cmd\n    Kernel.system cmd\nend\n\nPRODUCTS = \"#{OBJECT_FILE_DIR}/CCMetalShaders\"\nARCHIVE = \"#{PRODUCTS}/default.metal-ar\"\n\ndef compile_shader(src)\n\tdst = \"#{PRODUCTS}/#{File.basename(src, \".metal\")}.air\"\n\t\n\t# Compile and archive the shader.\n\tsystem %{xcrun -sdk #{SDK} metal #{METAL_ARGS.join(\" \")} \"#{src}\" -o \"#{dst}\"}\n\tsystem %{xcrun -sdk #{SDK} ar r \"#{ARCHIVE}\" \"#{dst}\"}\nend\n\nif SDK == \"iphoneos\"\n\t# Cannot use default.metallib to avoid clashing with Xcode build magic.\n\t# This is part of a workaround due to the iOS simulator not supporting Metal and may go away in the future.\n\tmetal_lib = \"#{BUILT_PRODUCTS_DIR}/#{PRODUCT_NAME}.app/CCShaders.metallib\"\n    \n\t# Delete the old products dir and metal lib.\n\tsystem %{rm -rf \"#{PRODUCTS}\"}\n    system %{rm -f \"#{metal_lib}\"}\n    system %{mkdir -p \"#{PRODUCTS}\"}\n    \n    # Compile the builtin shaders.\n    compile_shader(%{#{COCOS2D_DIR}/Platforms/iOS/CCShaders.metal})\n    \n\t# Compile/archive all the shaders in the shader directory.\n    Dir.glob(\"#{SHADER_DIR}/*.metal\").each{|src| compile_shader(src)}\n    \n\t# Link all shaders into default lib.\n\tsystem %{xcrun -sdk #{SDK} metallib -o \"#{metal_lib}\" \"#{ARCHIVE}\"}\nend\n";
+		};
 		D2E0167A18D782EC00927430 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1136,6 +1309,94 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		08BA20251C7860D600263AF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08BA20261C7860D600263AF8 /* CCTexturePVR.m in Sources */,
+				08BA20271C7860D600263AF8 /* CCCache.m in Sources */,
+				08BA20281C7860D600263AF8 /* CCShader.m in Sources */,
+				08BA20291C7860D600263AF8 /* CCLabelBMFont.m in Sources */,
+				08BA202A1C7860D600263AF8 /* CCLabelTTF.m in Sources */,
+				08BA202B1C7860D600263AF8 /* ccUtils.c in Sources */,
+				08BA202C1C7860D600263AF8 /* CCActionInterval.m in Sources */,
+				08BA202D1C7860D600263AF8 /* ZipUtils.m in Sources */,
+				08BA202E1C7860D600263AF8 /* NSThread+performBlock.m in Sources */,
+				08BA202F1C7860D600263AF8 /* CCAnimation.m in Sources */,
+				08BA20301C7860D600263AF8 /* CCPlatformTextFieldMac.m in Sources */,
+				08BA20311C7860D600263AF8 /* CCTouch.m in Sources */,
+				08BA20321C7860D600263AF8 /* CCColor.m in Sources */,
+				08BA20331C7860D600263AF8 /* CGPointExtension.m in Sources */,
+				08BA20341C7860D600263AF8 /* CCScene.m in Sources */,
+				08BA20351C7860D600263AF8 /* CCTextField.m in Sources */,
+				08BA20361C7860D600263AF8 /* CCFileUtils.m in Sources */,
+				08BA20371C7860D600263AF8 /* CCDirectorMac.m in Sources */,
+				08BA20381C7860D600263AF8 /* CCRenderer.m in Sources */,
+				08BA20391C7860D600263AF8 /* NSValue+CCRenderer.m in Sources */,
+				08BA203A1C7860D600263AF8 /* NSAttributedString+CCAdditions.m in Sources */,
+				08BA203B1C7860D600263AF8 /* CCScheduler.m in Sources */,
+				08BA203C1C7860D600263AF8 /* CCSpriteBatchNode.m in Sources */,
+				08BA203D1C7860D600263AF8 /* CCDirectorIOS.m in Sources */,
+				08BA203E1C7860D600263AF8 /* CCScrollView.m in Sources */,
+				08BA203F1C7860D600263AF8 /* CCGLView.m in Sources */,
+				08BA20401C7860D600263AF8 /* CCProgressNode.m in Sources */,
+				08BA20411C7860D600263AF8 /* TGAlib.m in Sources */,
+				08BA20421C7860D600263AF8 /* CCRenderTexture.m in Sources */,
+				08BA20431C7860D600263AF8 /* CCAction.m in Sources */,
+				08BA20441C7860D600263AF8 /* CCAppDelegate.m in Sources */,
+				08BA20451C7860D600263AF8 /* CCControl.m in Sources */,
+				08BA20461C7860D600263AF8 /* CCMetalSupport.m in Sources */,
+				08BA20471C7860D600263AF8 /* CCControlTextureFactory.m in Sources */,
+				08BA20481C7860D600263AF8 /* CCGLView.m in Sources */,
+				08BA20491C7860D600263AF8 /* CCLayout.m in Sources */,
+				08BA204A1C7860D600263AF8 /* CCDirector.m in Sources */,
+				08BA204B1C7860D600263AF8 /* CCActionEase.m in Sources */,
+				08BA204C1C7860D600263AF8 /* CCTableView.m in Sources */,
+				08BA204D1C7860D600263AF8 /* ccFPSImages.m in Sources */,
+				08BA204E1C7860D600263AF8 /* CCActionProgressTimer.m in Sources */,
+				08BA204F1C7860D600263AF8 /* CCDrawNode.m in Sources */,
+				08BA20501C7860D600263AF8 /* CCResponderManager.m in Sources */,
+				08BA20511C7860D600263AF8 /* CCSpriteFrame.m in Sources */,
+				08BA20521C7860D600263AF8 /* CCTexture.m in Sources */,
+				08BA20531C7860D600263AF8 /* CCSpriteFrameCache.m in Sources */,
+				08BA20541C7860D600263AF8 /* CCButton.m in Sources */,
+				08BA20551C7860D600263AF8 /* CCNodeColor.m in Sources */,
+				08BA20561C7860D600263AF8 /* CCTouchEvent.m in Sources */,
+				08BA20571C7860D600263AF8 /* CCRenderDispatch.m in Sources */,
+				08BA20581C7860D600263AF8 /* CCActionManager.m in Sources */,
+				08BA20591C7860D600263AF8 /* CCTextureCache.m in Sources */,
+				08BA205A1C7860D600263AF8 /* main.m in Sources */,
+				08BA205B1C7860D600263AF8 /* CCTouchIOS.m in Sources */,
+				08BA205C1C7860D600263AF8 /* CCMetalView.m in Sources */,
+				08BA205D1C7860D600263AF8 /* CCSprite9Slice.m in Sources */,
+				08BA205E1C7860D600263AF8 /* CCNode+Debug.m in Sources */,
+				08BA205F1C7860D600263AF8 /* CCProfiling.m in Sources */,
+				08BA20601C7860D600263AF8 /* MainScene.m in Sources */,
+				08BA20611C7860D600263AF8 /* CCActionTween.m in Sources */,
+				08BA20621C7860D600263AF8 /* CCResponder.m in Sources */,
+				08BA20631C7860D600263AF8 /* base64.c in Sources */,
+				08BA20641C7860D600263AF8 /* CCSprite.m in Sources */,
+				08BA20651C7860D600263AF8 /* CCNoARC.m in Sources */,
+				08BA20661C7860D600263AF8 /* UITouch+CC.m in Sources */,
+				08BA20671C7860D600263AF8 /* CCActionInstant.m in Sources */,
+				08BA20681C7860D600263AF8 /* cocos2d.m in Sources */,
+				08BA20691C7860D600263AF8 /* CCTransition.m in Sources */,
+				08BA206A1C7860D600263AF8 /* CCWindow.m in Sources */,
+				08BA206B1C7860D600263AF8 /* CCRendererGLSupport.m in Sources */,
+				08BA206C1C7860D600263AF8 /* CCPlatformTextField.m in Sources */,
+				08BA206D1C7860D600263AF8 /* CCRendererBasicTypes.m in Sources */,
+				08BA206E1C7860D600263AF8 /* CCActionCatmullRom.m in Sources */,
+				08BA206F1C7860D600263AF8 /* CCAnimationCache.m in Sources */,
+				08BA20701C7860D600263AF8 /* CCConfiguration.m in Sources */,
+				08BA20711C7860D600263AF8 /* CCSlider.m in Sources */,
+				08BA20721C7860D600263AF8 /* MainScene.swift in Sources */,
+				08BA20731C7860D600263AF8 /* CCLayoutBox.m in Sources */,
+				08BA20741C7860D600263AF8 /* CCPlatformTextFieldIOS.m in Sources */,
+				08BA20751C7860D600263AF8 /* AppDelegate.m in Sources */,
+				08BA20761C7860D600263AF8 /* CCNode.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7A4035FB19DDEE84007B6E8F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1312,6 +1573,80 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		08BA20891C7860D600263AF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Source/Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"\"Source/libs/cocos2d-iphone/cocos2d\"/**",
+					"Source/libs/cocos2d-iphone/external/Chipmunk/objectivec/include",
+					"Source/libs/cocos2d-iphone/external/Chipmunk/include",
+					"\"Source/libs/cocos2d-iphone/cocos2d-ui\"/**",
+					"\"Source/libs/cocos2d-iphone/external/ObjectAL\"/**",
+				);
+				INFOPLIST_FILE = "PROJECTNAME iOS copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Source/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		08BA208A1C7860D600263AF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Source/Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"\"Source/libs/cocos2d-iphone/cocos2d\"/**",
+					"Source/libs/cocos2d-iphone/external/Chipmunk/objectivec/include",
+					"Source/libs/cocos2d-iphone/external/Chipmunk/include",
+					"\"Source/libs/cocos2d-iphone/cocos2d-ui\"/**",
+					"\"Source/libs/cocos2d-iphone/external/ObjectAL\"/**",
+				);
+				INFOPLIST_FILE = "PROJECTNAME iOS copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Source/Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 3;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		7A40361919DDEE84007B6E8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1540,6 +1875,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		08BA20881C7860D600263AF8 /* Build configuration list for PBXNativeTarget "PROJECTNAME tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08BA20891C7860D600263AF8 /* Debug */,
+				08BA208A1C7860D600263AF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7A40361E19DDEE84007B6E8F /* Build configuration list for PBXNativeTarget "PROJECTNAME Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
