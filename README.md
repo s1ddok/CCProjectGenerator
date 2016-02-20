@@ -5,8 +5,8 @@ As of XCTemplates are unsupported, undocumented by Apple and are just a hell on 
 
 Some of project-generation code was extracted from SpriteBuilder repo. 
 
-![https://i.gyazo.com/e674f6bdc34b23fe3ee18091cc4227f6.png]
-(Screenshot)
+![Screenshot]
+(https://i.gyazo.com/e674f6bdc34b23fe3ee18091cc4227f6.png)
 
 TODO:
 *Add extension injection support
