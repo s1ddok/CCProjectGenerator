@@ -1,4 +1,5 @@
 #import "AppDelegate.h"
+#import "MainScene.h"
 
 @interface AppDelegate ()
 
@@ -11,7 +12,8 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     CCDirectorMac *director = (CCDirectorMac*) [CCDirector sharedDirector];
-
+    
+    NSMutableDictionary* cocos2dSetup;
     // enable FPS and SPF
     // [director setDisplayStats:YES];
 
@@ -39,7 +41,24 @@
     [[CCPackageManager sharedManager] loadPackages];
 
     [director runWithScene:[CCBReader loadAsScene:@"MainScene"]];
+#else
+    // Notice that I deliberately added some of the artwork without extensions
+    [CCFileUtils sharedFileUtils].suffixesDict = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
+                                                  @"-2x", CCFileUtilsSuffixiPad,
+                                                  @"-4x", CCFileUtilsSuffixiPadHD,
+                                                  @"-1x", CCFileUtilsSuffixiPhone,
+                                                  @"-1x", CCFileUtilsSuffixiPhoneHD,
+                                                  @"-1x", CCFileUtilsSuffixiPhone5,
+                                                  @"-2x", CCFileUtilsSuffixiPhone5HD,
+                                                  @"", CCFileUtilsSuffixDefault,
+                                                  nil];
 #endif
+    // Creat a scene
+    CCScene* main = [MainScene new];
+    
+    // Run the director with the scene.
+    // Push as much scenes as you want (maybe useful for 3D touch)
+    [director runWithScene:main];
 }
 #if CC_CCBREADER
 - (void)applicationWillTerminate:(NSNotification *)aNotification
