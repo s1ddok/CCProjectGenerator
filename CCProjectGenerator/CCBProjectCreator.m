@@ -136,6 +136,9 @@
     
     // Update Mac Xib file
     NSString* xibFileName = [parentPath stringByAppendingPathComponent:@"Source/Resources/Platforms/Mac/MainMenu.xib"];
+    if (programmingLanguage == CCBProgrammingLanguageObjectiveC) {
+        [self setName:@"" inFile:xibFileName search: @"customModule=\"PROJECTNAME\""];
+    }
     [self setName:identifier inFile:xibFileName search:substitutableProjectIdentifier];
     [self setName:projName inFile:xibFileName search:substitutableProjectName];
 	
@@ -154,9 +157,9 @@
     do {
         found = [fileData rangeOfData:search options:0 range:NSMakeRange(0, [fileData length])];
         if (found.location != NSNotFound)
-{
+        {
             [fileData replaceBytesInRange:found withBytes:[replacement bytes] length:[replacement length]];
-	}
+        }
     } while (found.location != NSNotFound && found.length > 0);
     [fileData writeToFile:fileName atomically:YES];
 }
