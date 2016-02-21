@@ -729,13 +729,6 @@
 			name = Math;
 			sourceTree = "<group>";
 		};
-		087467D01C77B1350070B58C /* OpenGLSupport */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = OpenGLSupport;
-			sourceTree = "<group>";
-		};
 		087467D31C77B1350070B58C /* Profiling */ = {
 			isa = PBXGroup;
 			children = (
@@ -751,7 +744,6 @@
 				087467C91C77B1350070B58C /* Data Structures */,
 				087467CC1C77B1350070B58C /* ImageSupport */,
 				087467CF1C77B1350070B58C /* Math */,
-				087467D01C77B1350070B58C /* OpenGLSupport */,
 				087467D31C77B1350070B58C /* Profiling */,
 				087467D41C77B1350070B58C /* ccUtils.c */,
 				087467D51C77B1350070B58C /* ccUtils.h */,
