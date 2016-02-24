@@ -45,7 +45,7 @@
 
 @implementation CCBProjectCreator
 
-+(BOOL) createDefaultProjectAtPath:(NSString*)fileName programmingLanguage:(CCBProgrammingLanguage)programmingLanguage
++(BOOL) createDefaultProjectAtPath:(NSString*)fileName withChipmunk:(BOOL)withChipmunk programmingLanguage:(CCBProgrammingLanguage)programmingLanguage
 {
     NSError *error = nil;
     NSFileManager* fm = [NSFileManager defaultManager];
@@ -56,14 +56,14 @@
     
     NSError* err = nil;
     [fm copyItemAtPath:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Generated/PROJECTNAME"] toPath:parentPath error:&err];
-    NSLog(@"%@", err.description);
     
     // Rename ccbproj
 	NSString* ccbproj = [NSString stringWithFormat:@"%@.ccbproj", substitutableProjectName];
     [fm moveItemAtPath:[parentPath stringByAppendingPathComponent:ccbproj] toPath:fileName error:NULL];
     
     // Update the Xcode project
-	NSString* xcodeproj = [NSString stringWithFormat:@"%@.xcodeproj", substitutableProjectName];
+    NSString* xcodeproj = [NSString stringWithFormat:withChipmunk ? @"%@+Chipmunk.xcodeproj" : @"%@.xcodeproj", substitutableProjectName];
+    NSString* configFile = [parentPath stringByAppendingPathComponent:@"Source/libs/cocos2d/ccConfig.h"];
     NSString* xcodeFileName = [parentPath stringByAppendingPathComponent:xcodeproj];
     NSString* projName = [[fileName lastPathComponent] stringByDeletingPathExtension];
     NSString* identifier = [projName sanitizedIdentifier];
@@ -72,7 +72,7 @@
     NSString *pbxprojFile = [xcodeFileName stringByAppendingPathComponent:@"project.pbxproj"];
     [self setName:projName inFile:pbxprojFile search:substitutableProjectName];
     [self setName:identifier inFile:pbxprojFile search:substitutableProjectIdentifier];
-    NSArray *filesToRemove;
+    NSMutableArray *filesToRemove = [NSMutableArray array];
     if (programmingLanguage == CCBProgrammingLanguageObjectiveC)
     {
         [self setName:@"IPHONEOS_DEPLOYMENT_TARGET = 6.0"
@@ -83,20 +83,33 @@
                search:@"MACOSX_DEPLOYMENT_TARGET = 10.10"];
         [self removeLinesMatching:@".*MainScene[.]swift.*" inFile:pbxprojFile];
         [self removeLinesMatching:@".*AppDelegate[.]swift.*" inFile:pbxprojFile];
-        filesToRemove = @[@"Source/MainScene.swift", @"Source/Platforms/iOS/AppDelegate.swift", @"Source/Platforms/Mac/AppDelegate.swift"];
+        [filesToRemove addObjectsFromArray: @[@"Source/MainScene.swift", @"Source/Platforms/iOS/AppDelegate.swift", @"Source/Platforms/Mac/AppDelegate.swift"]];
     }
     else if (programmingLanguage == CCBProgrammingLanguageSwift)
     {
         [self removeLinesMatching:@".*MainScene[.][hm].*" inFile:pbxprojFile];
         [self removeLinesMatching:@".* AppDelegate[.][hm].*" inFile:pbxprojFile];
         [self removeLinesMatching:@".*main[.][m].*" inFile:pbxprojFile];
-        filesToRemove = @[@"Source/MainScene.h", @"Source/MainScene.m", @"Source/Platforms/iOS/AppDelegate.h", @"Source/Platforms/iOS/AppDelegate.m", @"Source/Platforms/iOS/main.m", @"Source/Platforms/Mac/AppDelegate.h", @"Source/Platforms/Mac/AppDelegate.m", @"Source/Platforms/Mac/main.m"];
+        [filesToRemove addObjectsFromArray:  @[@"Source/MainScene.h", @"Source/MainScene.m", @"Source/Platforms/iOS/AppDelegate.h", @"Source/Platforms/iOS/AppDelegate.m", @"Source/Platforms/iOS/main.m", @"Source/Platforms/Mac/AppDelegate.h", @"Source/Platforms/Mac/AppDelegate.m", @"Source/Platforms/Mac/main.m"]];
     }
 
+    if (withChipmunk) {
+        [filesToRemove addObject:[NSString stringWithFormat:@"%@.xcodeproj", substitutableProjectName]];
+        
+        [self setName:@"CC_PHYSICS 1" inFile:configFile search:@"CC_PHYSICS 0"];
+        
+    } else {
+        [filesToRemove addObject:[NSString stringWithFormat:@"%@+Chipmunk.xcodeproj", substitutableProjectName]];
+        [filesToRemove addObject:@"Source/libs/Chipmunk"];
+        [filesToRemove addObject:@"Source/libs/cocos2d-ext/CCChipmunkPhysics"];
+    }
+    
+    
     for (NSString *file in filesToRemove)
     {
         if (![fm removeItemAtPath:[parentPath stringByAppendingPathComponent:file] error:&error])
         {
+            NSLog(@"%@", file);
             return NO;
         }
     }
@@ -178,5 +191,4 @@
     NSData *updatedFileData = [updatedString dataUsingEncoding:NSUTF8StringEncoding];
     [updatedFileData writeToFile:fileName atomically:YES];
 }
-
 @end

@@ -12,6 +12,7 @@ import Foundation
 class ViewController: NSViewController {
 
     @IBOutlet weak var createButton: NSButton!
+    @IBOutlet weak var chipmunkCheckbox: NSButton!
     @IBOutlet weak var langSelector: NSPopUpButton!
     
     override func viewDidLoad() {
@@ -22,6 +23,11 @@ class ViewController: NSViewController {
         viewLayer.backgroundColor = CGColorCreateGenericRGB(0.0, 0.0, 0.0, 1.0)
         view.wantsLayer = true
         view.layer = viewLayer
+        
+        // Color label
+        chipmunkCheckbox.attributedTitle = NSAttributedString(string: chipmunkCheckbox.title, attributes: [NSForegroundColorAttributeName : NSColor.whiteColor()])
+        
+        
     }
 
     override var representedObject: AnyObject? {
@@ -50,9 +56,8 @@ class ViewController: NSViewController {
                     fileName = fileName + "/" + lastPathComponent + ".ccbproj"
                     
                     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0), dispatch_get_main_queue(), { () -> Void in
-                        
                         let lang = CCBProgrammingLanguage(rawValue: Int8(self.langSelector.selectedItem!.tag))
-                        CCBProjectCreator.createDefaultProjectAtPath(fileName, programmingLanguage:lang!)
+                        CCBProjectCreator.createDefaultProjectAtPath(fileName, withChipmunk: self.chipmunkCheckbox.state == NSOnState, programmingLanguage:lang!)
                         
                     })
                     
