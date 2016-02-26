@@ -171,6 +171,30 @@
 		08B497AD1C7E302800102EC4 /* CCPhysicsShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B497A31C7E302800102EC4 /* CCPhysicsShape.m */; };
 		08B497AE1C7E302800102EC4 /* CCPhysicsShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B497A31C7E302800102EC4 /* CCPhysicsShape.m */; };
 		08B497AF1C7E302800102EC4 /* CCPhysicsShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B497A31C7E302800102EC4 /* CCPhysicsShape.m */; };
+		08B497FA1C7E39BC00102EC4 /* CCAnimationManager+FrameAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B497E81C7E39BC00102EC4 /* CCAnimationManager+FrameAnimation.m */; };
+		08B497FB1C7E39BC00102EC4 /* CCAnimationManager+FrameAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B497E81C7E39BC00102EC4 /* CCAnimationManager+FrameAnimation.m */; };
+		08B497FC1C7E39BC00102EC4 /* CCAnimationManager+FrameAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B497E81C7E39BC00102EC4 /* CCAnimationManager+FrameAnimation.m */; };
+		08B497FD1C7E39BC00102EC4 /* CCAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B497EA1C7E39BC00102EC4 /* CCAnimationManager.m */; };
+		08B497FE1C7E39BC00102EC4 /* CCAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B497EA1C7E39BC00102EC4 /* CCAnimationManager.m */; };
+		08B497FF1C7E39BC00102EC4 /* CCAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B497EA1C7E39BC00102EC4 /* CCAnimationManager.m */; };
+		08B498001C7E39BC00102EC4 /* CCBAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B497ED1C7E39BC00102EC4 /* CCBAnimationManager.m */; };
+		08B498011C7E39BC00102EC4 /* CCBAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B497ED1C7E39BC00102EC4 /* CCBAnimationManager.m */; };
+		08B498021C7E39BC00102EC4 /* CCBAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B497ED1C7E39BC00102EC4 /* CCBAnimationManager.m */; };
+		08B498031C7E39BC00102EC4 /* CCBKeyframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B497EF1C7E39BC00102EC4 /* CCBKeyframe.m */; };
+		08B498041C7E39BC00102EC4 /* CCBKeyframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B497EF1C7E39BC00102EC4 /* CCBKeyframe.m */; };
+		08B498051C7E39BC00102EC4 /* CCBKeyframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B497EF1C7E39BC00102EC4 /* CCBKeyframe.m */; };
+		08B498061C7E39BC00102EC4 /* CCBLocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B497F11C7E39BC00102EC4 /* CCBLocalizationManager.m */; };
+		08B498071C7E39BC00102EC4 /* CCBLocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B497F11C7E39BC00102EC4 /* CCBLocalizationManager.m */; };
+		08B498081C7E39BC00102EC4 /* CCBLocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B497F11C7E39BC00102EC4 /* CCBLocalizationManager.m */; };
+		08B498091C7E39BC00102EC4 /* CCBReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B497F31C7E39BC00102EC4 /* CCBReader.m */; };
+		08B4980A1C7E39BC00102EC4 /* CCBReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B497F31C7E39BC00102EC4 /* CCBReader.m */; };
+		08B4980B1C7E39BC00102EC4 /* CCBReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B497F31C7E39BC00102EC4 /* CCBReader.m */; };
+		08B4980C1C7E39BC00102EC4 /* CCBsequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B497F61C7E39BC00102EC4 /* CCBsequence.m */; };
+		08B4980D1C7E39BC00102EC4 /* CCBsequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B497F61C7E39BC00102EC4 /* CCBsequence.m */; };
+		08B4980E1C7E39BC00102EC4 /* CCBsequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B497F61C7E39BC00102EC4 /* CCBsequence.m */; };
+		08B4980F1C7E39BC00102EC4 /* CCBSequenceProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B497F81C7E39BC00102EC4 /* CCBSequenceProperty.m */; };
+		08B498101C7E39BC00102EC4 /* CCBSequenceProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B497F81C7E39BC00102EC4 /* CCBSequenceProperty.m */; };
+		08B498111C7E39BC00102EC4 /* CCBSequenceProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B497F81C7E39BC00102EC4 /* CCBSequenceProperty.m */; };
 		08BA201E1C785CA100263AF8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08BA201D1C785CA100263AF8 /* Launch Screen.storyboard */; };
 		08BA20211C785F1C00263AF8 /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B121015197483EE004C1E1D /* ic_launcher.png */; };
 		08BA20221C785F1D00263AF8 /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B121015197483EE004C1E1D /* ic_launcher.png */; };
@@ -512,6 +536,25 @@
 		08B497A11C7E302800102EC4 /* CCPhysicsNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPhysicsNode.m; sourceTree = "<group>"; };
 		08B497A21C7E302800102EC4 /* CCPhysicsShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPhysicsShape.h; sourceTree = "<group>"; };
 		08B497A31C7E302800102EC4 /* CCPhysicsShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPhysicsShape.m; sourceTree = "<group>"; };
+		08B497E71C7E39BC00102EC4 /* CCAnimationManager+FrameAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CCAnimationManager+FrameAnimation.h"; sourceTree = "<group>"; };
+		08B497E81C7E39BC00102EC4 /* CCAnimationManager+FrameAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CCAnimationManager+FrameAnimation.m"; sourceTree = "<group>"; };
+		08B497E91C7E39BC00102EC4 /* CCAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAnimationManager.h; sourceTree = "<group>"; };
+		08B497EA1C7E39BC00102EC4 /* CCAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAnimationManager.m; sourceTree = "<group>"; };
+		08B497EB1C7E39BC00102EC4 /* CCAnimationManager_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAnimationManager_Private.h; sourceTree = "<group>"; };
+		08B497EC1C7E39BC00102EC4 /* CCBAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBAnimationManager.h; sourceTree = "<group>"; };
+		08B497ED1C7E39BC00102EC4 /* CCBAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBAnimationManager.m; sourceTree = "<group>"; };
+		08B497EE1C7E39BC00102EC4 /* CCBKeyframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBKeyframe.h; sourceTree = "<group>"; };
+		08B497EF1C7E39BC00102EC4 /* CCBKeyframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBKeyframe.m; sourceTree = "<group>"; };
+		08B497F01C7E39BC00102EC4 /* CCBLocalizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBLocalizationManager.h; sourceTree = "<group>"; };
+		08B497F11C7E39BC00102EC4 /* CCBLocalizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBLocalizationManager.m; sourceTree = "<group>"; };
+		08B497F21C7E39BC00102EC4 /* CCBReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBReader.h; sourceTree = "<group>"; };
+		08B497F31C7E39BC00102EC4 /* CCBReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBReader.m; sourceTree = "<group>"; };
+		08B497F41C7E39BC00102EC4 /* CCBReader_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBReader_Private.h; sourceTree = "<group>"; };
+		08B497F51C7E39BC00102EC4 /* CCBSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBSequence.h; sourceTree = "<group>"; };
+		08B497F61C7E39BC00102EC4 /* CCBsequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBsequence.m; sourceTree = "<group>"; };
+		08B497F71C7E39BC00102EC4 /* CCBSequenceProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBSequenceProperty.h; sourceTree = "<group>"; };
+		08B497F81C7E39BC00102EC4 /* CCBSequenceProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBSequenceProperty.m; sourceTree = "<group>"; };
+		08B497F91C7E39BC00102EC4 /* CCBuilderReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBuilderReader.h; sourceTree = "<group>"; };
 		08BA201D1C785CA100263AF8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		08BA208B1C7860D600263AF8 /* PROJECTNAME tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PROJECTNAME tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08BA20911C78657200263AF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Resources/Platforms/tvOS/Info.plist; sourceTree = "<group>"; };
@@ -993,6 +1036,7 @@
 		08B497591C7DD6F700102EC4 /* cocos2d-ext */ = {
 			isa = PBXGroup;
 			children = (
+				08B497E61C7E39BC00102EC4 /* CCBReader */,
 				08B497991C7E302800102EC4 /* CCChipmunkPhysics */,
 			);
 			name = "cocos2d-ext";
@@ -1014,6 +1058,33 @@
 			);
 			name = CCChipmunkPhysics;
 			path = "Source/libs/cocos2d-ext/CCChipmunkPhysics";
+			sourceTree = "<group>";
+		};
+		08B497E61C7E39BC00102EC4 /* CCBReader */ = {
+			isa = PBXGroup;
+			children = (
+				08B497E71C7E39BC00102EC4 /* CCAnimationManager+FrameAnimation.h */,
+				08B497E81C7E39BC00102EC4 /* CCAnimationManager+FrameAnimation.m */,
+				08B497E91C7E39BC00102EC4 /* CCAnimationManager.h */,
+				08B497EA1C7E39BC00102EC4 /* CCAnimationManager.m */,
+				08B497EB1C7E39BC00102EC4 /* CCAnimationManager_Private.h */,
+				08B497EC1C7E39BC00102EC4 /* CCBAnimationManager.h */,
+				08B497ED1C7E39BC00102EC4 /* CCBAnimationManager.m */,
+				08B497EE1C7E39BC00102EC4 /* CCBKeyframe.h */,
+				08B497EF1C7E39BC00102EC4 /* CCBKeyframe.m */,
+				08B497F01C7E39BC00102EC4 /* CCBLocalizationManager.h */,
+				08B497F11C7E39BC00102EC4 /* CCBLocalizationManager.m */,
+				08B497F21C7E39BC00102EC4 /* CCBReader.h */,
+				08B497F31C7E39BC00102EC4 /* CCBReader.m */,
+				08B497F41C7E39BC00102EC4 /* CCBReader_Private.h */,
+				08B497F51C7E39BC00102EC4 /* CCBSequence.h */,
+				08B497F61C7E39BC00102EC4 /* CCBsequence.m */,
+				08B497F71C7E39BC00102EC4 /* CCBSequenceProperty.h */,
+				08B497F81C7E39BC00102EC4 /* CCBSequenceProperty.m */,
+				08B497F91C7E39BC00102EC4 /* CCBuilderReader.h */,
+			);
+			name = CCBReader;
+			path = "Source/libs/cocos2d-ext/CCChipmunkPhysics/CCBReader";
 			sourceTree = "<group>";
 		};
 		08BA208F1C78645D00263AF8 /* tvOS */ = {
@@ -1463,6 +1534,7 @@
 				08BA20471C7860D600263AF8 /* CCControlTextureFactory.m in Sources */,
 				08BA20481C7860D600263AF8 /* CCGLView.m in Sources */,
 				08BA20491C7860D600263AF8 /* CCLayout.m in Sources */,
+				08B498021C7E39BC00102EC4 /* CCBAnimationManager.m in Sources */,
 				08BA204A1C7860D600263AF8 /* CCDirector.m in Sources */,
 				08BA204B1C7860D600263AF8 /* CCActionEase.m in Sources */,
 				08BA204C1C7860D600263AF8 /* CCTableView.m in Sources */,
@@ -1470,7 +1542,9 @@
 				08BA204E1C7860D600263AF8 /* CCActionProgressTimer.m in Sources */,
 				08BA204F1C7860D600263AF8 /* CCDrawNode.m in Sources */,
 				08BA20501C7860D600263AF8 /* CCResponderManager.m in Sources */,
+				08B498051C7E39BC00102EC4 /* CCBKeyframe.m in Sources */,
 				08BA20511C7860D600263AF8 /* CCSpriteFrame.m in Sources */,
+				08B498111C7E39BC00102EC4 /* CCBSequenceProperty.m in Sources */,
 				08B497AC1C7E302800102EC4 /* CCPhysicsNode.m in Sources */,
 				08BA20521C7860D600263AF8 /* CCTexture.m in Sources */,
 				08BA20531C7860D600263AF8 /* CCSpriteFrameCache.m in Sources */,
@@ -1479,11 +1553,13 @@
 				08BA20571C7860D600263AF8 /* CCRenderDispatch.m in Sources */,
 				08BA20581C7860D600263AF8 /* CCActionManager.m in Sources */,
 				08BA20591C7860D600263AF8 /* CCTextureCache.m in Sources */,
+				08B497FC1C7E39BC00102EC4 /* CCAnimationManager+FrameAnimation.m in Sources */,
 				08B497A91C7E302800102EC4 /* CCPhysicsJoint.m in Sources */,
 				08BA205A1C7860D600263AF8 /* main.m in Sources */,
 				08BA205C1C7860D600263AF8 /* CCMetalView.m in Sources */,
 				08BA205D1C7860D600263AF8 /* CCSprite9Slice.m in Sources */,
 				08BA205E1C7860D600263AF8 /* CCNode+Debug.m in Sources */,
+				08B4980E1C7E39BC00102EC4 /* CCBsequence.m in Sources */,
 				08BA205F1C7860D600263AF8 /* CCProfiling.m in Sources */,
 				08BA20601C7860D600263AF8 /* MainScene.m in Sources */,
 				08BA20611C7860D600263AF8 /* CCActionTween.m in Sources */,
@@ -1494,6 +1570,7 @@
 				08BA20661C7860D600263AF8 /* UITouch+CC.m in Sources */,
 				08B497AF1C7E302800102EC4 /* CCPhysicsShape.m in Sources */,
 				08BA20671C7860D600263AF8 /* CCActionInstant.m in Sources */,
+				08B498081C7E39BC00102EC4 /* CCBLocalizationManager.m in Sources */,
 				08BA20681C7860D600263AF8 /* cocos2d.m in Sources */,
 				08BA20691C7860D600263AF8 /* CCTransition.m in Sources */,
 				08BA206A1C7860D600263AF8 /* CCWindow.m in Sources */,
@@ -1501,12 +1578,14 @@
 				08BA206C1C7860D600263AF8 /* CCPlatformTextField.m in Sources */,
 				08BA206D1C7860D600263AF8 /* CCRendererBasicTypes.m in Sources */,
 				08BA206E1C7860D600263AF8 /* CCActionCatmullRom.m in Sources */,
+				08B4980B1C7E39BC00102EC4 /* CCBReader.m in Sources */,
 				08BA206F1C7860D600263AF8 /* CCAnimationCache.m in Sources */,
 				08BA20701C7860D600263AF8 /* CCConfiguration.m in Sources */,
 				08BA20711C7860D600263AF8 /* CCSlider.m in Sources */,
 				08BA20721C7860D600263AF8 /* MainScene.swift in Sources */,
 				08BA20731C7860D600263AF8 /* CCLayoutBox.m in Sources */,
 				08BA20741C7860D600263AF8 /* CCPlatformTextFieldIOS.m in Sources */,
+				08B497FF1C7E39BC00102EC4 /* CCAnimationManager.m in Sources */,
 				08BA20751C7860D600263AF8 /* AppDelegate.m in Sources */,
 				08BA20761C7860D600263AF8 /* CCNode.m in Sources */,
 			);
@@ -1553,6 +1632,7 @@
 				087468DF1C77B2040070B58C /* CCDirectorIOS.m in Sources */,
 				087468E21C77B2040070B58C /* CCMetalSupport.m in Sources */,
 				087468BF1C77B1350070B58C /* CCDirector.m in Sources */,
+				08B498011C7E39BC00102EC4 /* CCBAnimationManager.m in Sources */,
 				087468731C77B1350070B58C /* CCActionEase.m in Sources */,
 				087468D11C77B1350070B58C /* CCTableView.m in Sources */,
 				087468BD1C77B1350070B58C /* ccFPSImages.m in Sources */,
@@ -1560,7 +1640,9 @@
 				087468451C77B1350070B58C /* CCDrawNode.m in Sources */,
 				0874685B1C77B1350070B58C /* CCResponderManager.m in Sources */,
 				087468551C77B1350070B58C /* CCSpriteFrame.m in Sources */,
+				08B498041C7E39BC00102EC4 /* CCBKeyframe.m in Sources */,
 				0874687D1C77B1350070B58C /* CCTexture.m in Sources */,
+				08B498101C7E39BC00102EC4 /* CCBSequenceProperty.m in Sources */,
 				08B497AB1C7E302800102EC4 /* CCPhysicsNode.m in Sources */,
 				087468571C77B1350070B58C /* CCSpriteFrameCache.m in Sources */,
 				087468CF1C77B1350070B58C /* CCButton.m in Sources */,
@@ -1569,11 +1651,13 @@
 				0874686B1C77B1350070B58C /* CCActionManager.m in Sources */,
 				087468E01C77B2040070B58C /* CCGLView.m in Sources */,
 				087468B51C77B1350070B58C /* CCDirectorMac.m in Sources */,
+				08B497FB1C7E39BC00102EC4 /* CCAnimationManager+FrameAnimation.m in Sources */,
 				08B497A81C7E302800102EC4 /* CCPhysicsJoint.m in Sources */,
 				0874687F1C77B1350070B58C /* CCTextureCache.m in Sources */,
 				7A4036E819DE3F33007B6E8F /* MainScene.m in Sources */,
 				087468511C77B1350070B58C /* CCSprite9Slice.m in Sources */,
 				0874683F1C77B1350070B58C /* CCNode+Debug.m in Sources */,
+				08B4980D1C7E39BC00102EC4 /* CCBsequence.m in Sources */,
 				087468851C77B1350070B58C /* CCProfiling.m in Sources */,
 				7A10CE5619F32FB0001673C3 /* MainScene.swift in Sources */,
 				087468791C77B1350070B58C /* CCActionTween.m in Sources */,
@@ -1584,6 +1668,7 @@
 				087468C51C77B1350070B58C /* CCNoARC.m in Sources */,
 				08B497AE1C7E302800102EC4 /* CCPhysicsShape.m in Sources */,
 				0874686F1C77B1350070B58C /* CCActionInstant.m in Sources */,
+				08B498071C7E39BC00102EC4 /* CCBLocalizationManager.m in Sources */,
 				087468BB1C77B1350070B58C /* cocos2d.m in Sources */,
 				087468631C77B1350070B58C /* CCTransition.m in Sources */,
 				087468971C77B1350070B58C /* CCRendererGLSupport.m in Sources */,
@@ -1591,12 +1676,14 @@
 				0874689B1C77B1350070B58C /* CCRendererBasicTypes.m in Sources */,
 				087468751C77B1350070B58C /* CCActionCatmullRom.m in Sources */,
 				0874684D1C77B1350070B58C /* CCAnimationCache.m in Sources */,
+				08B4980A1C7E39BC00102EC4 /* CCBReader.m in Sources */,
 				08BA209A1C7873EC00263AF8 /* AppDelegate.swift in Sources */,
 				087468C11C77B1350070B58C /* CCConfiguration.m in Sources */,
 				087468B31C77B1350070B58C /* NSEvent+CC.m in Sources */,
 				087468D91C77B1350070B58C /* CCSlider.m in Sources */,
 				7A40360419DDEE84007B6E8F /* main.m in Sources */,
 				087468431C77B1350070B58C /* CCLayoutBox.m in Sources */,
+				08B497FE1C7E39BC00102EC4 /* CCAnimationManager.m in Sources */,
 				7A59498E19E3941300F65F90 /* AppDelegate.m in Sources */,
 				0874683D1C77B1350070B58C /* CCNode.m in Sources */,
 			);
@@ -1643,6 +1730,7 @@
 				087468D41C77B1350070B58C /* CCControlTextureFactory.m in Sources */,
 				087468AA1C77B1350070B58C /* CCGLView.m in Sources */,
 				087468401C77B1350070B58C /* CCLayout.m in Sources */,
+				08B498001C7E39BC00102EC4 /* CCBAnimationManager.m in Sources */,
 				087468BE1C77B1350070B58C /* CCDirector.m in Sources */,
 				087468721C77B1350070B58C /* CCActionEase.m in Sources */,
 				087468D01C77B1350070B58C /* CCTableView.m in Sources */,
@@ -1650,7 +1738,9 @@
 				087468761C77B1350070B58C /* CCActionProgressTimer.m in Sources */,
 				087468441C77B1350070B58C /* CCDrawNode.m in Sources */,
 				0874685A1C77B1350070B58C /* CCResponderManager.m in Sources */,
+				08B498031C7E39BC00102EC4 /* CCBKeyframe.m in Sources */,
 				087468541C77B1350070B58C /* CCSpriteFrame.m in Sources */,
+				08B4980F1C7E39BC00102EC4 /* CCBSequenceProperty.m in Sources */,
 				08B497AA1C7E302800102EC4 /* CCPhysicsNode.m in Sources */,
 				0874687C1C77B1350070B58C /* CCTexture.m in Sources */,
 				087468561C77B1350070B58C /* CCSpriteFrameCache.m in Sources */,
@@ -1659,11 +1749,13 @@
 				087468981C77B1350070B58C /* CCRenderDispatch.m in Sources */,
 				0874686A1C77B1350070B58C /* CCActionManager.m in Sources */,
 				0874687E1C77B1350070B58C /* CCTextureCache.m in Sources */,
+				08B497FA1C7E39BC00102EC4 /* CCAnimationManager+FrameAnimation.m in Sources */,
 				08B497A71C7E302800102EC4 /* CCPhysicsJoint.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				087468A41C77B1350070B58C /* CCMetalView.m in Sources */,
 				087468501C77B1350070B58C /* CCSprite9Slice.m in Sources */,
 				0874683E1C77B1350070B58C /* CCNode+Debug.m in Sources */,
+				08B4980C1C7E39BC00102EC4 /* CCBsequence.m in Sources */,
 				087468841C77B1350070B58C /* CCProfiling.m in Sources */,
 				7A046D8C19E8A20E004C4763 /* MainScene.m in Sources */,
 				087468781C77B1350070B58C /* CCActionTween.m in Sources */,
@@ -1674,6 +1766,7 @@
 				087468A61C77B1350070B58C /* UITouch+CC.m in Sources */,
 				08B497AD1C7E302800102EC4 /* CCPhysicsShape.m in Sources */,
 				0874686E1C77B1350070B58C /* CCActionInstant.m in Sources */,
+				08B498061C7E39BC00102EC4 /* CCBLocalizationManager.m in Sources */,
 				087468BA1C77B1350070B58C /* cocos2d.m in Sources */,
 				087468621C77B1350070B58C /* CCTransition.m in Sources */,
 				087468DC1C77B1D50070B58C /* CCWindow.m in Sources */,
@@ -1681,12 +1774,14 @@
 				087468C61C77B1350070B58C /* CCPlatformTextField.m in Sources */,
 				0874689A1C77B1350070B58C /* CCRendererBasicTypes.m in Sources */,
 				087468741C77B1350070B58C /* CCActionCatmullRom.m in Sources */,
+				08B498091C7E39BC00102EC4 /* CCBReader.m in Sources */,
 				0874684C1C77B1350070B58C /* CCAnimationCache.m in Sources */,
 				087468C01C77B1350070B58C /* CCConfiguration.m in Sources */,
 				087468D81C77B1350070B58C /* CCSlider.m in Sources */,
 				7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */,
 				087468421C77B1350070B58C /* CCLayoutBox.m in Sources */,
 				087468C81C77B1350070B58C /* CCPlatformTextFieldIOS.m in Sources */,
+				08B497FD1C7E39BC00102EC4 /* CCAnimationManager.m in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
 				0874683C1C77B1350070B58C /* CCNode.m in Sources */,
 			);
