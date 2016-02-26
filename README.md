@@ -6,7 +6,7 @@ As of XCTemplates are unsupported, undocumented by Apple and are just a hell on 
 Some of project-generation code was extracted from SpriteBuilder repo. 
 
 ![Screenshot]
-(https://i.gyazo.com/e674f6bdc34b23fe3ee18091cc4227f6.png)
+(https://i.gyazo.com/c47e42d896c81382a5a5cde52c09eeb8.png)
 
 TODO:
  - Add cocos2d update feature
