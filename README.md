@@ -10,4 +10,3 @@ Some of project-generation code was extracted from SpriteBuilder repo.
 
 TODO:
  - Add cocos2d update feature
- - Add SpriteBuilder extension injection support
