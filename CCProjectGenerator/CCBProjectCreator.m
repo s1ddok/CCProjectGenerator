@@ -45,7 +45,7 @@
 
 @implementation CCBProjectCreator
 
-+(BOOL) createDefaultProjectAtPath:(NSString*)fileName withChipmunk:(BOOL)withChipmunk programmingLanguage:(CCBProgrammingLanguage)programmingLanguage
++(BOOL) createDefaultProjectAtPath:(NSString*)fileName withChipmunk:(BOOL)withChipmunk withCCB:(BOOL)withCCB programmingLanguage:(CCBProgrammingLanguage)programmingLanguage
 {
     NSError *error = nil;
     NSFileManager* fm = [NSFileManager defaultManager];
@@ -59,7 +59,6 @@
     
     // Rename ccbproj
 	NSString* ccbproj = [NSString stringWithFormat:@"%@.ccbproj", substitutableProjectName];
-    [fm moveItemAtPath:[parentPath stringByAppendingPathComponent:ccbproj] toPath:fileName error:NULL];
     
     // Update the Xcode project
     NSString* xcodeproj = [NSString stringWithFormat:withChipmunk ? @"%@+Chipmunk.xcodeproj" : @"%@.xcodeproj", substitutableProjectName];
@@ -104,12 +103,27 @@
         [filesToRemove addObject:@"Source/libs/cocos2d-ext/CCChipmunkPhysics"];
     }
     
+    if (withCCB) {
+        [self setName:@"CC_CCBREADER 1" inFile:configFile search:@"CC_CCBREADER 0"];
+        
+        [fm moveItemAtPath:[parentPath stringByAppendingPathComponent:ccbproj] toPath:fileName error:NULL];
+    } else {
+        [filesToRemove addObject:ccbproj];
+        
+        [filesToRemove addObject:@"Source/libs/cocos2d-ext/CCBReader"];
+        [filesToRemove addObject:@"Source/Resources/Published-iOS"];
+        [filesToRemove addObject:@"Packages"];
+        
+        [self removeSpriteBuilderFromFile:pbxprojFile];
+    }
+    
+    
+    
     
     for (NSString *file in filesToRemove)
     {
         if (![fm removeItemAtPath:[parentPath stringByAppendingPathComponent:file] error:&error])
         {
-            NSLog(@"%@", file);
             return NO;
         }
     }
@@ -188,6 +202,32 @@
                                                          options:0
                                                            range:NSMakeRange(0, [fileString length])
                                                     withTemplate:@""];
+    NSData *updatedFileData = [updatedString dataUsingEncoding:NSUTF8StringEncoding];
+    [updatedFileData writeToFile:fileName atomically:YES];
+}
+
++ (void) removeSpriteBuilderFromFile:(NSString*)fileName {
+    NSData *fileData = [NSData dataWithContentsOfFile:fileName];
+    NSString *fileString = [[NSString alloc] initWithData:fileData encoding:NSUTF8StringEncoding];
+    NSError* err;
+    NSRegularExpression *regex = [NSRegularExpression
+                                  regularExpressionWithPattern:@"[A-Z0-9]{24}.{4}CCBReader \\*\\/ =.+?isa = PBXGroup.+?name = CCBReader;.+?\\};"
+                                  options:NSRegularExpressionDotMatchesLineSeparators
+                                  error:&err];
+    
+    NSString *updatedString = [regex stringByReplacingMatchesInString:fileString
+                                                              options:0
+                                                                range:NSMakeRange(0, [fileString length])
+                                                         withTemplate:@""];
+    
+    for (NSString* pattern in @[@".*CCB[^u].*", @".*CCAnimationManager.*", @".*Published-iOS.*"]) {
+        regex = [NSRegularExpression regularExpressionWithPattern:pattern options: NSRegularExpressionCaseInsensitive error:nil];
+        updatedString = [regex stringByReplacingMatchesInString:updatedString
+                                                        options:0
+                                                          range:NSMakeRange(0, [updatedString length])
+                                                   withTemplate:@""];
+    }
+    
     NSData *updatedFileData = [updatedString dataUsingEncoding:NSUTF8StringEncoding];
     [updatedFileData writeToFile:fileName atomically:YES];
 }

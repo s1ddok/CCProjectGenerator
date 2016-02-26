@@ -17,6 +17,5 @@ typedef NS_ENUM(int8_t, CCBProgrammingLanguage)
 
 @interface CCBProjectCreator : NSObject
 
-+ (BOOL) createDefaultProjectAtPath:(NSString*)fileName withChipmunk:(BOOL)withChipmunk programmingLanguage:(CCBProgrammingLanguage)language;
-
++(BOOL) createDefaultProjectAtPath:(NSString*)fileName withChipmunk:(BOOL)withChipmunk withCCB:(BOOL)withCCB programmingLanguage:(CCBProgrammingLanguage)programmingLanguage;
 @end
