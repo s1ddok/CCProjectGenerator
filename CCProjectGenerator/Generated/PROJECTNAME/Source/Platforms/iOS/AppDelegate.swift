@@ -65,6 +65,9 @@ class AppDelegate: CCAppDelegate {
             CCFileUtilsSuffixiPhone5 : "-1x",
             CCFileUtilsSuffixiPhone5HD : "-2x",
             CCFileUtilsSuffixDefault : ""]
+        
+        // Call this instead of line above if you are using SpriteBuilder
+        //CCBReader.configureCCFileUtils()
 
         // Get the director
         let director = CCDirector.sharedDirector()

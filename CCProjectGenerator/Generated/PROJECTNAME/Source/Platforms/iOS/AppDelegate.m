@@ -63,6 +63,9 @@
                                                   @"", CCFileUtilsSuffixDefault,
                                                   nil];
     
+    // Call this instead of line above if you are using SpriteBuilder
+    //[CCBReader configureCCFileUtils];
+    
     // Show FPS
     // We really want this when developing an app
     [cocos2dSetup setObject:@(YES) forKey:CCSetupShowDebugStats];

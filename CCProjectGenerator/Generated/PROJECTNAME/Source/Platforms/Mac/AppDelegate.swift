@@ -58,6 +58,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             CCFileUtilsSuffixiPhone5HD : "-2x",
             CCFileUtilsSuffixDefault   : ""]
         
+        // Call this instead of line above if you are using SpriteBuilder
+        //CCBReader.configureCCFileUtils()
+        
         // Create a scene
         let mainScene = MainScene()
         
