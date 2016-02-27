@@ -8,6 +8,9 @@
 #if CC_CCBREADER
 #import "libs/cocos2d-ui/CCBReader/CCBReader.h"
 #endif
+#if CC_PHYSICS
+#import "libs/cocos2d-ext/CCChipmunkPhysics.h"
+#endif
 #import "libs/cocos2d-ui/CCControl.h"
 #import "libs/cocos2d-ui/CCButton.h"
 #import "libs/cocos2d-ui/CCSlider.h"
