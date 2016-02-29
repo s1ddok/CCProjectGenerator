@@ -26,7 +26,6 @@
  */
 
 #import "CCNode.h"
-#import "CCNode_Private.h"
 #import "CCDirector.h"
 #import "CCActionManager.h"
 #if CC_CCBREADER
@@ -41,10 +40,7 @@
 #if CC_PHYSICS
 #import "CCPhysics+ObjectiveChipmunk.h"
 #endif
-#import "CCDirector_Private.h"
 #import "CCRenderer_Private.h"
-#import "CCTexture_Private.h"
-#import "CCActionManager_Private.h"
 
 #if CC_NODE_RENDER_SUBPIXEL
 #define RENDER_IN_SUBPIXEL

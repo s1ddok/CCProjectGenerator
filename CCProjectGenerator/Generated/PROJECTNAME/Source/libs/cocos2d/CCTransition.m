@@ -28,8 +28,7 @@
 #import "objc/message.h"
 
 #import "CCTransition.h"
-#import "CCDirector_Private.h"
-#import "CCNode_Private.h"
+#import "CCDirector.h"
 
 // -----------------------------------------------------------------
 
