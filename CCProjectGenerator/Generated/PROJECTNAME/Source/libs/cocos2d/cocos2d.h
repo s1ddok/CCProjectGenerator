@@ -41,7 +41,7 @@
 
 // 0x00 HI ME LO
 // 00   03 xx xx
-#define COCOS2D_VERSION 0x00030409
+#define COCOS2D_VERSION 0x00030500
 #define COCOS2D_BUILD @"release"
 //
 // all cocos2d include files
@@ -55,7 +55,6 @@
 #import "CCActionEase.h"
 #import "CCActionInstant.h"
 #import "CCActionInterval.h"
-#import "CCActionProgressTimer.h"
 #import "CCActionTween.h"
 #import "CCColor.h"
 #import "CCConfiguration.h"

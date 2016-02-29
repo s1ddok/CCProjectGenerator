@@ -78,7 +78,6 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
 #import "../../CCConfiguration.h"
 #import "CCScene.h"
 
-#import "CCDirector_Private.h"
 #import "CCRenderDispatch.h"
 
 
@@ -402,7 +401,9 @@ extern EAGLContext *CCRenderDispatchSetupGL(EAGLRenderingAPI api, EAGLSharegroup
 	[fence.handlers addObject:handler];
 }
 
--(void)beginFrame {}
+-(void)beginFrame {
+    [EAGLContext setCurrentContext:self.context];
+}
 
 -(void)presentFrame
 {
