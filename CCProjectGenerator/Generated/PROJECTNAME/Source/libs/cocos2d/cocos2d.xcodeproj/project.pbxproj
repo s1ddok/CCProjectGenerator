@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0529445D11098D6F00E500F3 /* CCProfiling.h in Headers */ = {isa = PBXBuildFile; fileRef = 0529445911098D6F00E500F3 /* CCProfiling.h */; };
 		0529445E11098D6F00E500F3 /* CCProfiling.m in Sources */ = {isa = PBXBuildFile; fileRef = 0529445A11098D6F00E500F3 /* CCProfiling.m */; };
-		080246411CB1289A00277993 /* CCPlatformTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 571CD01F19649E03003D460C /* CCPlatformTextField.m */; };
 		0802468B1CB12E8300277993 /* CCAnimationManager+FrameAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 080246781CB12E8300277993 /* CCAnimationManager+FrameAnimation.h */; };
 		0802468C1CB12E8300277993 /* CCAnimationManager+FrameAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 080246781CB12E8300277993 /* CCAnimationManager+FrameAnimation.h */; };
 		0802468D1CB12E8300277993 /* CCAnimationManager+FrameAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 080246781CB12E8300277993 /* CCAnimationManager+FrameAnimation.h */; };
@@ -1736,7 +1735,6 @@
 				08F4AAF81C6E98A1004DAAF7 /* CCCache.m in Sources */,
 				08F4AAF91C6E98A1004DAAF7 /* CCRendererGLSupport.m in Sources */,
 				08F4AAFA1C6E98A1004DAAF7 /* CCScrollView.m in Sources */,
-				080246411CB1289A00277993 /* CCPlatformTextField.m in Sources */,
 				08F4AAFB1C6E98A1004DAAF7 /* UITouch+CC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
