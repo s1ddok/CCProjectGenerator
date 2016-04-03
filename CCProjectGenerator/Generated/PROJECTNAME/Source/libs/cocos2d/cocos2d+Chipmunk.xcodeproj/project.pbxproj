@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0529445D11098D6F00E500F3 /* CCProfiling.h in Headers */ = {isa = PBXBuildFile; fileRef = 0529445911098D6F00E500F3 /* CCProfiling.h */; };
 		0529445E11098D6F00E500F3 /* CCProfiling.m in Sources */ = {isa = PBXBuildFile; fileRef = 0529445A11098D6F00E500F3 /* CCProfiling.m */; };
-		080246411CB1289A00277993 /* CCPlatformTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 571CD01F19649E03003D460C /* CCPlatformTextField.m */; };
 		0802468B1CB12E8300277993 /* CCAnimationManager+FrameAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 080246781CB12E8300277993 /* CCAnimationManager+FrameAnimation.h */; };
 		0802468C1CB12E8300277993 /* CCAnimationManager+FrameAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 080246781CB12E8300277993 /* CCAnimationManager+FrameAnimation.h */; };
 		0802468D1CB12E8300277993 /* CCAnimationManager+FrameAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 080246781CB12E8300277993 /* CCAnimationManager+FrameAnimation.h */; };
@@ -100,6 +99,8 @@
 		080247071CB149D600277993 /* libObjectiveChipmunk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 080246D01CB134AA00277993 /* libObjectiveChipmunk.a */; };
 		080247081CB149E000277993 /* libObjectiveChipmunk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 080246D21CB134AA00277993 /* libObjectiveChipmunk.a */; };
 		080247091CB149E600277993 /* libObjectiveChipmunk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 080246D41CB134AA00277993 /* libObjectiveChipmunk.a */; };
+		080247401CB1625600277993 /* CCPlatformTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 571CD01F19649E03003D460C /* CCPlatformTextField.m */; };
+		080247411CB1625700277993 /* CCPlatformTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 571CD01F19649E03003D460C /* CCPlatformTextField.m */; };
 		08A4EB6F1C7A553E00A08923 /* CCActionProgressTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A4EB6B1C7A553E00A08923 /* CCActionProgressTimer.h */; };
 		08A4EB701C7A553E00A08923 /* CCActionProgressTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A4EB6B1C7A553E00A08923 /* CCActionProgressTimer.h */; };
 		08A4EB711C7A553E00A08923 /* CCActionProgressTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A4EB6B1C7A553E00A08923 /* CCActionProgressTimer.h */; };
@@ -335,7 +336,6 @@
 		50FBB2DA117613F500150761 /* CCActionTween.h in Headers */ = {isa = PBXBuildFile; fileRef = 50FBB2D8117613F500150761 /* CCActionTween.h */; };
 		50FBB2DB117613F500150761 /* CCActionTween.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FBB2D9117613F500150761 /* CCActionTween.m */; };
 		571CD02819649E03003D460C /* CCPlatformTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 571CD01E19649E03003D460C /* CCPlatformTextField.h */; };
-		571CD02919649E03003D460C /* CCPlatformTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 571CD01F19649E03003D460C /* CCPlatformTextField.m */; };
 		571CD02A19649E03003D460C /* CCPlatformTextFieldIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 571CD02119649E03003D460C /* CCPlatformTextFieldIOS.h */; };
 		571CD02B19649E03003D460C /* CCPlatformTextFieldIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 571CD02219649E03003D460C /* CCPlatformTextFieldIOS.m */; };
 		5BC1DE2A1A2E2099009C2E67 /* NSEvent+CC.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BC1DE281A2E2099009C2E67 /* NSEvent+CC.h */; };
@@ -490,7 +490,6 @@
 		7A5948CF19E375BE00F65F90 /* CCControlTextureFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B78AE45F17E7AF1C0028BE0B /* CCControlTextureFactory.m */; };
 		7A5948D119E375BE00F65F90 /* CCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E260D718171D2000A0E872 /* CCTextField.m */; };
 		7A5948D319E375BE00F65F90 /* CCSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EE6A1D181AE34600B983FE /* CCSlider.m */; };
-		7A59494019E3810500F65F90 /* CCPlatformTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 571CD01F19649E03003D460C /* CCPlatformTextField.m */; };
 		A003AC8C1657071100C7B792 /* ccFPSImages.h in Headers */ = {isa = PBXBuildFile; fileRef = A003AC8B1657071100C7B792 /* ccFPSImages.h */; };
 		A003AC8F16572D6000C7B792 /* ccFPSImages.m in Sources */ = {isa = PBXBuildFile; fileRef = A003AC8E16572D6000C7B792 /* ccFPSImages.m */; };
 		A039EBFF155C686B0061EE37 /* CCNode+Debug.h in Headers */ = {isa = PBXBuildFile; fileRef = A039EBFD155C686B0061EE37 /* CCNode+Debug.h */; };
@@ -1887,7 +1886,6 @@
 				08F4AAF81C6E98A1004DAAF7 /* CCCache.m in Sources */,
 				08F4AAF91C6E98A1004DAAF7 /* CCRendererGLSupport.m in Sources */,
 				08F4AAFA1C6E98A1004DAAF7 /* CCScrollView.m in Sources */,
-				080246411CB1289A00277993 /* CCPlatformTextField.m in Sources */,
 				08F4AAFB1C6E98A1004DAAF7 /* UITouch+CC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1909,11 +1907,11 @@
 				5018F27E0DFDEAFF00C013A5 /* CCTextureCache.m in Sources */,
 				D31C795019994126007921E1 /* CCMetalSupport.m in Sources */,
 				506602120E38A70D000B500E /* CCScheduler.m in Sources */,
+				080247401CB1625600277993 /* CCPlatformTextField.m in Sources */,
 				50A07B7B0E4CBCD300AAF0BB /* cocos2d.m in Sources */,
 				501CCFB40E99657C00B86F68 /* TGAlib.m in Sources */,
 				B7E260D918171D2000A0E872 /* CCTextField.m in Sources */,
 				50F7B2790F28DE7C00057537 /* CCActionEase.m in Sources */,
-				571CD02919649E03003D460C /* CCPlatformTextField.m in Sources */,
 				B7EE6A1F181AE34600B983FE /* CCSlider.m in Sources */,
 				080246B81CB12E8300277993 /* CCBsequence.m in Sources */,
 				08A4EB801C7A563900A08923 /* CCPotentiometer.m in Sources */,
@@ -2014,6 +2012,7 @@
 				080246EA1CB134CB00277993 /* CCPhysicsBody.m in Sources */,
 				7A59480D19E375A400F65F90 /* CCRenderTexture.m in Sources */,
 				0EFC792E1B3B0E14008926DD /* CCRendererGLSupport.m in Sources */,
+				080247411CB1625700277993 /* CCPlatformTextField.m in Sources */,
 				7A59482A19E375A700F65F90 /* CCActionManager.m in Sources */,
 				7A59482C19E375A800F65F90 /* CCAction.m in Sources */,
 				7A59482E19E375A800F65F90 /* CCActionInstant.m in Sources */,
@@ -2052,7 +2051,6 @@
 				7A59488F19E375B300F65F90 /* CCDirectorMac.m in Sources */,
 				7A59489119E375B400F65F90 /* CCGLView.m in Sources */,
 				7A59489319E375B400F65F90 /* CCWindow.m in Sources */,
-				7A59494019E3810500F65F90 /* CCPlatformTextField.m in Sources */,
 				7A59489719E375B400F65F90 /* cocos2d.m in Sources */,
 				7A59489919E375B500F65F90 /* ccFPSImages.m in Sources */,
 				7A59489C19E375B500F65F90 /* CCDirector.m in Sources */,
