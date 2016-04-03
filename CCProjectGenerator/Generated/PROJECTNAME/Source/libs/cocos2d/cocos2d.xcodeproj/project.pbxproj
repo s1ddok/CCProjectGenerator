@@ -66,7 +66,6 @@
 		080246C11CB12E8300277993 /* CCBuilderReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0802468A1CB12E8300277993 /* CCBuilderReader.h */; };
 		080246C21CB12E8300277993 /* CCBuilderReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0802468A1CB12E8300277993 /* CCBuilderReader.h */; };
 		080246C31CB12E8300277993 /* CCBuilderReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0802468A1CB12E8300277993 /* CCBuilderReader.h */; };
-		0802472B1CB15D6B00277993 /* libcocos2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5018F24D0DFDEAC400C013A5 /* libcocos2d.a */; };
 		08A4EB6F1C7A553E00A08923 /* CCActionProgressTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A4EB6B1C7A553E00A08923 /* CCActionProgressTimer.h */; };
 		08A4EB701C7A553E00A08923 /* CCActionProgressTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A4EB6B1C7A553E00A08923 /* CCActionProgressTimer.h */; };
 		08A4EB711C7A553E00A08923 /* CCActionProgressTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A4EB6B1C7A553E00A08923 /* CCActionProgressTimer.h */; };
@@ -99,7 +98,6 @@
 		08F4AABC1C6E98A1004DAAF7 /* CCScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 506602100E38A70D000B500E /* CCScheduler.m */; };
 		08F4AABD1C6E98A1004DAAF7 /* cocos2d.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A07B7A0E4CBCD300AAF0BB /* cocos2d.m */; };
 		08F4AABE1C6E98A1004DAAF7 /* TGAlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 501CCFAB0E99657C00B86F68 /* TGAlib.m */; };
-		08F4AABF1C6E98A1004DAAF7 /* CCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E260D718171D2000A0E872 /* CCTextField.m */; };
 		08F4AAC01C6E98A1004DAAF7 /* CCActionEase.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F7B2770F28DE7C00057537 /* CCActionEase.m */; };
 		08F4AAC21C6E98A1004DAAF7 /* CCSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EE6A1D181AE34600B983FE /* CCSlider.m */; };
 		08F4AAC31C6E98A1004DAAF7 /* CCSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 509A79960F6188420032F449 /* CCSprite.m */; };
@@ -761,7 +759,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0802472B1CB15D6B00277993 /* libcocos2d.a in Frameworks */,
 				08F4AB591C6E98A1004DAAF7 /* Metal.framework in Frameworks */,
 				08F4AB5A1C6E98A1004DAAF7 /* GLKit.framework in Frameworks */,
 				08F4AB5B1C6E98A1004DAAF7 /* AVFoundation.framework in Frameworks */,
@@ -1677,7 +1674,6 @@
 				08F4AABC1C6E98A1004DAAF7 /* CCScheduler.m in Sources */,
 				08F4AABD1C6E98A1004DAAF7 /* cocos2d.m in Sources */,
 				08F4AABE1C6E98A1004DAAF7 /* TGAlib.m in Sources */,
-				08F4AABF1C6E98A1004DAAF7 /* CCTextField.m in Sources */,
 				08F4AAC01C6E98A1004DAAF7 /* CCActionEase.m in Sources */,
 				080246AB1CB12E8300277993 /* CCBLocalizationManager.m in Sources */,
 				08F4AAC21C6E98A1004DAAF7 /* CCSlider.m in Sources */,
