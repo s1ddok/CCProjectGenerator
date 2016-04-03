@@ -22,7 +22,7 @@
 */
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate {
+class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
     
     @IBOutlet weak var window: NSWindow!
     @IBOutlet weak var glView: CCGLView!
@@ -36,6 +36,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         let defaultWinSize = CGSizeMake(480, 320)
         window.setFrame(CGRect(origin: CGPointZero, size: defaultWinSize), display: true)
+        window.delegate = self
         glView.frame = window.frame
         
         director.view = glView
@@ -66,6 +67,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         // Run the director with the initial scene
         director.runWithScene(mainScene)
+    }
+    
+    func windowWillClose(notification: NSNotification) {
+        CCDirector.sharedDirector().end()
     }
     
 }

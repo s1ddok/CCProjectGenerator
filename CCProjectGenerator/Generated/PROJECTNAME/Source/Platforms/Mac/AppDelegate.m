@@ -29,6 +29,7 @@
 
     // Enable "moving" mouse event. Default no.
     [self.window setAcceptsMouseMovedEvents:NO];
+    self.window.delegate = self;
 
     // Center main window
     [self.window center];
@@ -65,4 +66,7 @@
 }
 #endif
 
+-(void)windowWillClose:(NSNotification *)notification {
+    [[CCDirector sharedDirector] end];
+}
 @end
