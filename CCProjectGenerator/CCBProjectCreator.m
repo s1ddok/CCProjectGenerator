@@ -53,6 +53,7 @@
 	NSString* substitutableProjectName = @"PROJECTNAME";
     NSString* substitutableProjectIdentifier = @"PROJECTIDENTIFIER";
     NSString* parentPath = [fileName stringByDeletingLastPathComponent];
+    NSString* cocos2dfolder = @"Source/libs/cocos2d/";
     
     NSError* err = nil;
     [fm copyItemAtPath:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Generated/PROJECTNAME"] toPath:parentPath error:&err];
@@ -61,14 +62,15 @@
 	NSString* ccbproj = [NSString stringWithFormat:@"%@.ccbproj", substitutableProjectName];
     
     // Update the Xcode project
-    NSString* xcodeproj = [NSString stringWithFormat:withChipmunk ? @"%@+Chipmunk.xcodeproj" : @"%@.xcodeproj", substitutableProjectName];
-    NSString* configFile = [parentPath stringByAppendingPathComponent:@"Source/libs/cocos2d/ccConfig.h"];
+    NSString* xcodeproj = [NSString stringWithFormat:@"%@.xcodeproj", substitutableProjectName];
+    NSString* configFile = [parentPath stringByAppendingPathComponent:@"Source/libs/cocos2d/cocos2d/ccConfig.h"];
     NSString* xcodeFileName = [parentPath stringByAppendingPathComponent:xcodeproj];
     NSString* projName = [[fileName lastPathComponent] stringByDeletingPathExtension];
     NSString* identifier = [projName sanitizedIdentifier];
     
     // Update the project
     NSString *pbxprojFile = [xcodeFileName stringByAppendingPathComponent:@"project.pbxproj"];
+    NSString *ccpbxprojFile = [[parentPath stringByAppendingPathComponent:cocos2dfolder] stringByAppendingPathComponent:@"cocos2d.xcodeproj/project.pbxproj"];
     [self setName:projName inFile:pbxprojFile search:substitutableProjectName];
     [self setName:identifier inFile:pbxprojFile search:substitutableProjectIdentifier];
     NSMutableArray *filesToRemove = [NSMutableArray array];
@@ -89,18 +91,23 @@
         [self removeLinesMatching:@".*MainScene[.][hm].*" inFile:pbxprojFile];
         [self removeLinesMatching:@".* AppDelegate[.][hm].*" inFile:pbxprojFile];
         [self removeLinesMatching:@".*main[.][m].*" inFile:pbxprojFile];
+        
         [filesToRemove addObjectsFromArray:  @[@"Source/MainScene.h", @"Source/MainScene.m", @"Source/Platforms/iOS/AppDelegate.h", @"Source/Platforms/iOS/AppDelegate.m", @"Source/Platforms/iOS/main.m", @"Source/Platforms/Mac/AppDelegate.h", @"Source/Platforms/Mac/AppDelegate.m", @"Source/Platforms/Mac/main.m"]];
     }
 
+    NSString* ccchipmunk = [[parentPath stringByAppendingPathComponent:cocos2dfolder] stringByAppendingPathComponent:@"cocos2d+Chipmunk.xcodeproj"];
+    
     if (withChipmunk) {
-        [filesToRemove addObject:[NSString stringWithFormat:@"%@.xcodeproj", substitutableProjectName]];
+        NSString* cocos2dxcproj = @"Source/libs/cocos2d/cocos2d.xcodeproj";
         
         [self setName:@"CC_PHYSICS 1" inFile:configFile search:@"CC_PHYSICS 0"];
         
+        [fm removeItemAtPath:[parentPath stringByAppendingPathComponent:cocos2dxcproj] error:NULL];
+        [fm moveItemAtPath:ccchipmunk toPath:[parentPath stringByAppendingPathComponent:cocos2dxcproj] error:NULL];
     } else {
-        [filesToRemove addObject:[NSString stringWithFormat:@"%@+Chipmunk.xcodeproj", substitutableProjectName]];
-        [filesToRemove addObject:@"Source/libs/Chipmunk"];
-        [filesToRemove addObject:@"Source/libs/cocos2d-ext/CCChipmunkPhysics"];
+        [filesToRemove addObject:@"Source/libs/cocos2d/cocos2d+Chipmunk.xcodeproj"];
+        [filesToRemove addObject:@"Source/libs/cocos2d/Chipmunk"];
+        [filesToRemove addObject:@"Source/libs/cocos2d/cocos2d-ext/CCChipmunkPhysics"];
     }
     
     if (withCCB) {
@@ -110,11 +117,12 @@
     } else {
         [filesToRemove addObject:ccbproj];
         
-        [filesToRemove addObject:@"Source/libs/cocos2d-ext/CCBReader"];
+        [filesToRemove addObject:@"Source/libs/cocos2d/cocos2d-ext/CCBReader"];
         [filesToRemove addObject:@"Source/Resources/Published-iOS"];
         [filesToRemove addObject:@"Packages"];
         
-        [self removeSpriteBuilderFromFile:pbxprojFile];
+        [self removeSpriteBuilderFromFile:ccpbxprojFile];
+        [self removeLinesMatching:@".*Published-iOS.*" inFile:pbxprojFile];
     }
     
     
@@ -220,7 +228,7 @@
                                                                 range:NSMakeRange(0, [fileString length])
                                                          withTemplate:@""];
     
-    for (NSString* pattern in @[@".*CCB[^u].*", @".*CCAnimationManager.*", @".*Published-iOS.*"]) {
+    for (NSString* pattern in @[@".*CCB[^u].*", @".*CCAnimationManager.*"]) {
         regex = [NSRegularExpression regularExpressionWithPattern:pattern options: NSRegularExpressionCaseInsensitive error:nil];
         updatedString = [regex stringByReplacingMatchesInString:updatedString
                                                         options:0
