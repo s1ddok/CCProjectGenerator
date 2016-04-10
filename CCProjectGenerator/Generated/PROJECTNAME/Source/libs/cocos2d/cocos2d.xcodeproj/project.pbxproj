@@ -324,7 +324,6 @@
 		7A5946AC19E372F200F65F90 /* CCTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = A6DC4E0718055DCC00C280A6 /* CCTransition.h */; };
 		7A5946B919E372F300F65F90 /* CCNodeColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 5018F25E0DFDEAFF00C013A5 /* CCNodeColor.h */; };
 		7A5946C119E372F400F65F90 /* CCRenderTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = 50316AA410291280003ACFE7 /* CCRenderTexture.h */; };
-		7A5946C419E372F400F65F90 /* CCRenderTexture_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B840C31909F447008063EA /* CCRenderTexture_Private.h */; };
 		7A5946DE19E372F800F65F90 /* CCActionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 50CB3B0C100AC43A00B7A750 /* CCActionManager.h */; };
 		7A5946E019E372F800F65F90 /* CCAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 5018F2520DFDEAFF00C013A5 /* CCAction.h */; };
 		7A5946E219E372F800F65F90 /* CCActionInstant.h in Headers */ = {isa = PBXBuildFile; fileRef = 5018F2580DFDEAFF00C013A5 /* CCActionInstant.h */; };
@@ -710,7 +709,6 @@
 		D28A2E1A1954F68D00ADC03D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D28A2E1C1954F7E000ADC03D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		D28A2E201954F85700ADC03D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		D2B840C31909F447008063EA /* CCRenderTexture_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCRenderTexture_Private.h; sourceTree = "<group>"; };
 		D309054F18AC23110081BF11 /* CCRenderer_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRenderer_Private.h; sourceTree = "<group>"; };
 		D31C794F19994126007921E1 /* CCMetalSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMetalSupport.m; sourceTree = "<group>"; };
 		D31C795119994197007921E1 /* CCMetalSupport_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMetalSupport_Private.h; sourceTree = "<group>"; };
@@ -1177,7 +1175,6 @@
 			children = (
 				50316AA410291280003ACFE7 /* CCRenderTexture.h */,
 				50316AA510291280003ACFE7 /* CCRenderTexture.m */,
-				D2B840C31909F447008063EA /* CCRenderTexture_Private.h */,
 				0EFC792C1B3B0E14008926DD /* CCRendererGLSupport.m */,
 				D3903B0E199528A0003AA81A /* CCRenderDispatch.h */,
 				D3903B0F199528A0003AA81A /* CCRenderDispatch.m */,
@@ -1482,7 +1479,6 @@
 				7A5946AC19E372F200F65F90 /* CCTransition.h in Headers */,
 				7A5946B919E372F300F65F90 /* CCNodeColor.h in Headers */,
 				7A5946C119E372F400F65F90 /* CCRenderTexture.h in Headers */,
-				7A5946C419E372F400F65F90 /* CCRenderTexture_Private.h in Headers */,
 				7A5946DE19E372F800F65F90 /* CCActionManager.h in Headers */,
 				7A5946E019E372F800F65F90 /* CCAction.h in Headers */,
 				7A5946E219E372F800F65F90 /* CCActionInstant.h in Headers */,
