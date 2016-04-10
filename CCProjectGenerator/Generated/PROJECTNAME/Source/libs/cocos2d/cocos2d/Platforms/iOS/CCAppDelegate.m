@@ -26,11 +26,11 @@
 #import "../../ccMacros.h"
 #if __CC_PLATFORM_IOS
 
-#import "CCConfiguration.h"
 #import "CCAppDelegate.h"
 #import "CCTexture.h"
 #import "CCFileUtils.h"
 #import "CCDirector.h"
+#import "CCConfiguration.h"
 #import "CCScheduler.h"
 #import "CCGLView.h"
 
