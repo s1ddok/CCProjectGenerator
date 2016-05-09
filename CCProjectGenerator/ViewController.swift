@@ -48,7 +48,7 @@ class ViewController: NSViewController {
                 
                 //check validity
                 let validChars = NSCharacterSet.alphanumericCharacterSet().mutableCopy() as! NSMutableCharacterSet
-                validChars.addCharactersInString("_")
+                validChars.addCharactersInString("_-")
                 let invalidChars = validChars.invertedSet
                 
                 let lastPathComponent = (fileNameRaw as NSString).lastPathComponent
