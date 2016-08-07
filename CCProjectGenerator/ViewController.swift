@@ -53,6 +53,7 @@ class ViewController: NSViewController {
                 validChars.addCharacters(in: "_- ")
                 let invalidChars = validChars.inverted
   
+
                 let lastPathComponent = (fileNameRaw as NSString).lastPathComponent
                 if lastPathComponent.rangeOfCharacter(from: invalidChars) == nil {
                     
