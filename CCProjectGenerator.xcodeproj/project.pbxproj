@@ -103,6 +103,8 @@
 				TargetAttributes = {
 					08A4E4511C762DB600A08923 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = PR6HV9J6AD;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -254,6 +256,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CCProjectGenerator/CCProjectGenerator-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -268,6 +271,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.cocos2d.CCProjectGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CCProjectGenerator/CCProjectGenerator-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

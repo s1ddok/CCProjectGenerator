@@ -9,6 +9,8 @@
 import Cocoa
 import Foundation
 
+typealias AttributedString = Foundation.NSAttributedString
+
 class ViewController: NSViewController {
 
     @IBOutlet weak var createButton: NSButton!
@@ -21,14 +23,14 @@ class ViewController: NSViewController {
         
         // Set fancy black background color
         let viewLayer = CALayer()
-        viewLayer.backgroundColor = CGColorCreateGenericRGB(0.0, 0.0, 0.0, 1.0)
+        viewLayer.backgroundColor = CGColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
         view.wantsLayer = true
         view.layer = viewLayer
         
         // Color label
-        chipmunkCheckbox.attributedTitle = NSAttributedString(string: chipmunkCheckbox.title, attributes: [NSForegroundColorAttributeName : NSColor.whiteColor()])
+        chipmunkCheckbox.attributedTitle = AttributedString(string: chipmunkCheckbox.title, attributes: [NSForegroundColorAttributeName : NSColor.white])
         
-        ccbCheckbox.attributedTitle = NSAttributedString(string: ccbCheckbox.title, attributes: [NSForegroundColorAttributeName : NSColor.whiteColor()])
+        ccbCheckbox.attributedTitle = AttributedString(string: ccbCheckbox.title, attributes: [NSForegroundColorAttributeName : NSColor.white])
     }
 
     override var representedObject: AnyObject? {
@@ -38,27 +40,27 @@ class ViewController: NSViewController {
     }
 
 
-    @IBAction func createButtonPressed(sender: AnyObject) {
+    @IBAction func createButtonPressed(_ sender: AnyObject) {
         let saveDialog = NSSavePanel()
         
-        saveDialog.beginSheetModalForWindow(NSApplication.sharedApplication().mainWindow!) { (result: Int) -> Void in
+        saveDialog.beginSheetModal(for: NSApplication.shared().mainWindow!) { (result: Int) -> Void in
             if result == NSModalResponseOK {
-                var fileName = saveDialog.URL!.path!
-                let fileNameRaw = (fileName as NSString).stringByDeletingPathExtension
+                var fileName = saveDialog.url!.path
+                let fileNameRaw = (fileName as NSString).deletingPathExtension
                 
                 //check validity
-                let validChars = NSCharacterSet.alphanumericCharacterSet().mutableCopy() as! NSMutableCharacterSet
-                validChars.addCharactersInString("_")
-                let invalidChars = validChars.invertedSet
+                let validChars = NSMutableCharacterSet.alphanumeric()
+                validChars.addCharacters(in: "_- ")
+                let invalidChars = validChars.inverted
                 
                 let lastPathComponent = (fileNameRaw as NSString).lastPathComponent
-                if lastPathComponent.rangeOfCharacterFromSet(invalidChars) == nil {
+                if lastPathComponent.rangeOfCharacter(from: invalidChars) == nil {
                     
                     fileName = fileName + "/" + lastPathComponent + ".ccbproj"
                     
-                    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0), dispatch_get_main_queue(), { () -> Void in
+                    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(0) / Double(NSEC_PER_SEC), execute: { () -> Void in
                         let lang = CCBProgrammingLanguage(rawValue: Int8(self.langSelector.selectedItem!.tag))
-                        CCBProjectCreator.createDefaultProjectAtPath(fileName, withChipmunk: self.chipmunkCheckbox.state == NSOnState, withCCB: self.ccbCheckbox.state == NSOnState, programmingLanguage:lang!)
+                        CCBProjectCreator.createDefaultProject(atPath: fileName, withChipmunk: self.chipmunkCheckbox.state == NSOnState, withCCB: self.ccbCheckbox.state == NSOnState, programmingLanguage:lang!)
                     })
                     
                 }
