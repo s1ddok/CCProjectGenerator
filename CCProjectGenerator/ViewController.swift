@@ -33,7 +33,7 @@ class ViewController: NSViewController {
         ccbCheckbox.attributedTitle = AttributedString(string: ccbCheckbox.title, attributes: [NSForegroundColorAttributeName : NSColor.white])
     }
 
-    override var representedObject: AnyObject? {
+    override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
         }
